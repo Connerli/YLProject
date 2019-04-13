@@ -1,0 +1,165 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BSBacktraceLogger (0.0.1)
+  - CocoaLumberjack (3.5.2):
+    - CocoaLumberjack/Core (= 3.5.2)
+  - CocoaLumberjack/Core (3.5.2)
+  - CYLTabBarController (1.17.23)
+  - DoraemonKit/Core (1.1.7):
+    - BSBacktraceLogger
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithGPS (1.1.7):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithLoad (1.1.7):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/WithLogger (1.1.7):
+    - BSBacktraceLogger
+    - CocoaLumberjack
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - FBRetainCycleDetector (0.1.4)
+  - fishhook (0.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GVUserDefaults (1.0.2)
+  - GYHttpMock (1.0.1)
+  - HHRouter (0.1.9)
+  - IQKeyboardManager (6.0.6)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - SVProgressHUD (2.2.5)
+  - TYCyclePagerView (1.1.2)
+  - UICountingLabel (1.2.0)
+  - "UITextView+Placeholder (1.2.1)"
+  - WebViewJavascriptBridge (6.0.3)
+  - WMPageController (2.5.2)
+  - YLControllerName (0.0.3)
+  - YTKNetwork (2.0.4):
+    - AFNetworking (~> 3.0)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - CYLTabBarController (~> 1.17.7)
+  - DoraemonKit/Core (~> 1.1.7)
+  - DoraemonKit/WithGPS (~> 1.1.7)
+  - DoraemonKit/WithLoad (~> 1.1.7)
+  - DoraemonKit/WithLogger (~> 1.1.7)
+  - FMDB (~> 2.7.2)
+  - GVUserDefaults (~> 1.0.2)
+  - GYHttpMock (~> 1.0.0)
+  - HHRouter (~> 0.1.9)
+  - IQKeyboardManager (~> 6.0.2)
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.15.3)
+  - MLeaksFinder
+  - SDWebImage (~> 4.3.3)
+  - SVProgressHUD (~> 2.2.5)
+  - TYCyclePagerView (~> 1.1.0)
+  - WebViewJavascriptBridge (~> 6.0)
+  - WMPageController (~> 2.5.2)
+  - YLControllerName
+  - YTKNetwork (~> 2.0.4)
+  - YYCache (~> 1.0.4)
+  - YYModel (~> 1.0.4)
+  - YYText (~> 1.0.7)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - BSBacktraceLogger
+    - CocoaLumberjack
+    - CYLTabBarController
+    - DoraemonKit
+    - FBRetainCycleDetector
+    - fishhook
+    - FMDB
+    - GVUserDefaults
+    - GYHttpMock
+    - HHRouter
+    - IQKeyboardManager
+    - Masonry
+    - MJRefresh
+    - MLeaksFinder
+    - PNChart
+    - SDWebImage
+    - SVProgressHUD
+    - TYCyclePagerView
+    - UICountingLabel
+    - "UITextView+Placeholder"
+    - WebViewJavascriptBridge
+    - WMPageController
+    - YLControllerName
+    - YTKNetwork
+    - YYCache
+    - YYModel
+    - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
+  CYLTabBarController: 73889c1ccc7685221d85ac2dbf188900543f17d0
+  DoraemonKit: 0ac105ce8924477c22c57cc303798c04ab3c4dcd
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  GYHttpMock: ad08e55ce8bde4e7f7b4d0cbc79ff23c1311658b
+  HHRouter: c096524e95a07a1970e6e23a19ee5a9592dc326d
+  IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TYCyclePagerView: 0f67b0986995fd614843e819bc974cadd7f98008
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+  YLControllerName: 31f3062a6e18326c5263669128a6abe4077b94bb
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 7cc583be56228c2dd6ce6b672eaea50803d39f57
+
+COCOAPODS: 1.5.3

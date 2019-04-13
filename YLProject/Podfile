@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+#忽略第三方库中的警告提示 （提示了也不能改😂）
+inhibit_all_warnings!
+
+target 'YLProject' do
+    
+pod 'CYLTabBarController', '~> 1.17.7'
+pod 'YYText', '~> 1.0.7'
+pod 'YYCache', '~> 1.0.4'
+pod 'YYModel','~> 1.0.4'
+pod 'YTKNetwork', '~> 2.0.4'
+pod 'SDWebImage','~> 4.3.3'
+pod 'Masonry','~> 1.1.0'
+pod 'SVProgressHUD','~> 2.2.5'
+pod 'MJRefresh','~> 3.1.15.3'
+pod 'IQKeyboardManager','~> 6.0.2'
+pod 'FMDB','~> 2.7.2'
+pod 'TYCyclePagerView','~> 1.1.0'
+pod 'GVUserDefaults', '~> 1.0.2'
+pod 'WebViewJavascriptBridge', '~> 6.0'
+pod 'HHRouter', '~> 0.1.9'
+pod 'WMPageController', '~> 2.5.2'
+    
+#调试库
+pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'
+pod 'YLControllerName', :configuration => 'Debug'
+pod 'MLeaksFinder', :configuration => 'Debug'
+pod 'DoraemonKit/Core', '~> 1.1.7', :configuration => 'Debug'
+pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configuration => 'Debug'
+pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configuration => 'Debug'
+pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configuration => 'Debug'
+    
+end
