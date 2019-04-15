@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13063E0C22642E11000F725E /* YLMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E0B22642E11000F725E /* YLMainTabBarController.m */; };
+		13063E0F22642F7D000F725E /* YLNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E0E22642F7D000F725E /* YLNetworkConfig.m */; };
+		13063E1222643372000F725E /* YLAPPInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E1122643372000F725E /* YLAPPInfoTool.m */; };
+		13063E1D22646C37000F725E /* YLMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E1C22646C37000F725E /* YLMainRootViewController.m */; };
+		13063E2022646DC9000F725E /* YLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E1F22646DC9000F725E /* YLMeViewController.m */; };
+		13063E2322646DE5000F725E /* YLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E2222646DE5000F725E /* YLHomeViewController.m */; };
 		13B6A9FE2261C8E7004B76D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6A9FD2261C8E7004B76D7 /* AppDelegate.m */; };
 		13B6AA012261C8E7004B76D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA002261C8E7004B76D7 /* ViewController.m */; };
 		13B6AA042261C8E7004B76D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA022261C8E7004B76D7 /* Main.storyboard */; };
@@ -63,6 +69,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13063E092264275A000F725E /* YLNavigationControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNavigationControllerProtocol.h; sourceTree = "<group>"; };
+		13063E0A22642E11000F725E /* YLMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMainTabBarController.h; sourceTree = "<group>"; };
+		13063E0B22642E11000F725E /* YLMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMainTabBarController.m; sourceTree = "<group>"; };
+		13063E0D22642F7D000F725E /* YLNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetworkConfig.h; sourceTree = "<group>"; };
+		13063E0E22642F7D000F725E /* YLNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNetworkConfig.m; sourceTree = "<group>"; };
+		13063E1022643372000F725E /* YLAPPInfoTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAPPInfoTool.h; sourceTree = "<group>"; };
+		13063E1122643372000F725E /* YLAPPInfoTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAPPInfoTool.m; sourceTree = "<group>"; };
+		13063E13226434A7000F725E /* YLUtilsHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUtilsHeaders.h; sourceTree = "<group>"; };
+		13063E14226434D9000F725E /* YLConstHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLConstHeaders.h; sourceTree = "<group>"; };
+		13063E1B22646C37000F725E /* YLMainRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMainRootViewController.h; sourceTree = "<group>"; };
+		13063E1C22646C37000F725E /* YLMainRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMainRootViewController.m; sourceTree = "<group>"; };
+		13063E1E22646DC9000F725E /* YLMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMeViewController.h; sourceTree = "<group>"; };
+		13063E1F22646DC9000F725E /* YLMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMeViewController.m; sourceTree = "<group>"; };
+		13063E2122646DE5000F725E /* YLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeViewController.h; sourceTree = "<group>"; };
+		13063E2222646DE5000F725E /* YLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeViewController.m; sourceTree = "<group>"; };
 		13B6A9F92261C8E7004B76D7 /* YLProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B6A9FC2261C8E7004B76D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B6A9FD2261C8E7004B76D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,6 +184,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13063E08226425F7000F725E /* BaseTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				13063E0A22642E11000F725E /* YLMainTabBarController.h */,
+				13063E0B22642E11000F725E /* YLMainTabBarController.m */,
+			);
+			path = BaseTabbarController;
+			sourceTree = "<group>";
+		};
+		13063E1522646A51000F725E /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				13063E1722646A75000F725E /* Me */,
+				13063E1622646A6F000F725E /* Home */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		13063E1622646A6F000F725E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				13063E2122646DE5000F725E /* YLHomeViewController.h */,
+				13063E2222646DE5000F725E /* YLHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		13063E1722646A75000F725E /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				13063E1E22646DC9000F725E /* YLMeViewController.h */,
+				13063E1F22646DC9000F725E /* YLMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		13063E1A22646BEA000F725E /* MainRootVC */ = {
+			isa = PBXGroup;
+			children = (
+				13063E1B22646C37000F725E /* YLMainRootViewController.h */,
+				13063E1C22646C37000F725E /* YLMainRootViewController.m */,
+			);
+			path = MainRootVC;
+			sourceTree = "<group>";
+		};
 		13B6A9F02261C8E7004B76D7 = {
 			isa = PBXGroup;
 			children = (
@@ -228,11 +294,13 @@
 		13B6AA302261C973004B76D7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				13B6AA3C2261C973004B76D7 /* BaseModel */,
+				13063E1A22646BEA000F725E /* MainRootVC */,
+				13063E08226425F7000F725E /* BaseTabbarController */,
 				13B6AA312261C973004B76D7 /* BaseNavigationController */,
+				13B6AA372261C973004B76D7 /* BaseViewController */,
 				13B6AA3F2261C973004B76D7 /* BaseRequest */,
 				13B6AA342261C973004B76D7 /* BaseView */,
-				13B6AA372261C973004B76D7 /* BaseViewController */,
+				13B6AA3C2261C973004B76D7 /* BaseModel */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -240,8 +308,9 @@
 		13B6AA312261C973004B76D7 /* BaseNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				13B6AA322261C973004B76D7 /* YLBaseNavigationController.m */,
+				13063E092264275A000F725E /* YLNavigationControllerProtocol.h */,
 				13B6AA332261C973004B76D7 /* YLBaseNavigationController.h */,
+				13B6AA322261C973004B76D7 /* YLBaseNavigationController.m */,
 			);
 			path = BaseNavigationController;
 			sourceTree = "<group>";
@@ -258,10 +327,10 @@
 		13B6AA372261C973004B76D7 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				13B6AA382261C973004B76D7 /* YLBaseViewController.m */,
-				13B6AA392261C973004B76D7 /* YLBaseTableViewController.m */,
 				13B6AA3A2261C973004B76D7 /* YLBaseViewController.h */,
+				13B6AA382261C973004B76D7 /* YLBaseViewController.m */,
 				13B6AA3B2261C973004B76D7 /* YLBaseTableViewController.h */,
+				13B6AA392261C973004B76D7 /* YLBaseTableViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -278,8 +347,10 @@
 		13B6AA3F2261C973004B76D7 /* BaseRequest */ = {
 			isa = PBXGroup;
 			children = (
-				13B6AA402261C973004B76D7 /* YLBaseRequest.m */,
 				13B6AA412261C973004B76D7 /* YLBaseRequest.h */,
+				13B6AA402261C973004B76D7 /* YLBaseRequest.m */,
+				13063E0D22642F7D000F725E /* YLNetworkConfig.h */,
+				13063E0E22642F7D000F725E /* YLNetworkConfig.m */,
 			);
 			path = BaseRequest;
 			sourceTree = "<group>";
@@ -287,6 +358,7 @@
 		13B6AA482261C98D004B76D7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				13063E1522646A51000F725E /* Interface */,
 				13B6AA8C2261CDD5004B76D7 /* GitHooks */,
 				13B6AA832261C9EF004B76D7 /* Fastlane */,
 				13B6AA492261C98D004B76D7 /* SimulationPositioning(模拟定位) */,
@@ -338,8 +410,11 @@
 		13B6AA5B2261C9B4004B76D7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				13063E13226434A7000F725E /* YLUtilsHeaders.h */,
 				13B6AA5C2261C9B4004B76D7 /* TimeUtils */,
 				13B6AA5F2261C9B4004B76D7 /* UserDefaults */,
+				13063E1022643372000F725E /* YLAPPInfoTool.h */,
+				13063E1122643372000F725E /* YLAPPInfoTool.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -367,9 +442,10 @@
 		13B6AA642261C9B4004B76D7 /* Const */ = {
 			isa = PBXGroup;
 			children = (
-				13B6AA652261C9B4004B76D7 /* YLConstNotification.h */,
+				13063E14226434D9000F725E /* YLConstHeaders.h */,
 				13B6AA662261C9B4004B76D7 /* YLConstCommon.h */,
 				13B6AA672261C9B4004B76D7 /* YLConstCommon.m */,
+				13B6AA652261C9B4004B76D7 /* YLConstNotification.h */,
 				13B6AA682261C9B4004B76D7 /* YLConstNotification.m */,
 			);
 			path = Const;
@@ -530,6 +606,7 @@
 		13B6A9F12261C8E7004B76D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YL;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Conner;
 				TargetAttributes = {
@@ -679,6 +756,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13063E0C22642E11000F725E /* YLMainTabBarController.m in Sources */,
 				13B6AA6E2261C9B4004B76D7 /* UICollectionViewCell+Category.m in Sources */,
 				13B6AA822261C9BC004B76D7 /* NSObject+ClassInfo.m in Sources */,
 				13B6AA712261C9B4004B76D7 /* UITableViewCell+Category.m in Sources */,
@@ -686,6 +764,7 @@
 				13B6AA442261C973004B76D7 /* YLBaseViewController.m in Sources */,
 				13B6AA462261C973004B76D7 /* YLBaseModel.m in Sources */,
 				13B6AA812261C9BC004B76D7 /* NSDecimalNumber+Addtion.m in Sources */,
+				13063E2022646DC9000F725E /* YLMeViewController.m in Sources */,
 				13B6AA752261C9B4004B76D7 /* YLConstCommon.m in Sources */,
 				13B6AA432261C973004B76D7 /* YLBaseAlertView.m in Sources */,
 				13B6AA452261C973004B76D7 /* YLBaseTableViewController.m in Sources */,
@@ -693,8 +772,11 @@
 				13B6AA012261C8E7004B76D7 /* ViewController.m in Sources */,
 				13B6AA972261EEC8004B76D7 /* UIColor+YLAdditions.m in Sources */,
 				13B6AA0C2261C8EA004B76D7 /* main.m in Sources */,
+				13063E0F22642F7D000F725E /* YLNetworkConfig.m in Sources */,
 				13B6A9FE2261C8E7004B76D7 /* AppDelegate.m in Sources */,
 				13B6AA762261C9B4004B76D7 /* YLConstNotification.m in Sources */,
+				13063E1D22646C37000F725E /* YLMainRootViewController.m in Sources */,
+				13063E2322646DE5000F725E /* YLHomeViewController.m in Sources */,
 				13B6AA732261C9B4004B76D7 /* YLUserDefaults+Properties.m in Sources */,
 				13B6AA6D2261C9B4004B76D7 /* NSString+YLAdditions.m in Sources */,
 				13B6AA472261C973004B76D7 /* YLBaseRequest.m in Sources */,
@@ -702,6 +784,7 @@
 				13B6AA722261C9B4004B76D7 /* YLTimeUtils.m in Sources */,
 				13B6AA6F2261C9B4004B76D7 /* CALayer+Category.m in Sources */,
 				13B6AA422261C973004B76D7 /* YLBaseNavigationController.m in Sources */,
+				13063E1222643372000F725E /* YLAPPInfoTool.m in Sources */,
 				13B6AA742261C9B4004B76D7 /* YLUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

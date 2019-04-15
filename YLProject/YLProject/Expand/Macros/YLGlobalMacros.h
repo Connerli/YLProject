@@ -9,7 +9,7 @@
 #ifndef YLGlobalMacros_h
 #define YLGlobalMacros_h
 /*************  Log  ****************/
-#ifdef DEBUG
+#if defined(DEBUG)|| defined(TEST)
 #define NSLog(format, ...) do {                                                             \
 fprintf(stderr, "<%s : %d> %s\n",                                           \
 [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],  \
@@ -53,12 +53,18 @@ fprintf(stderr, "-------\n");                                               \
 #endif
 #endif
 #endif
-/*****************根据屏幕分辨率判断设备类型**********/
-#define isIPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,960), [[UIScreen mainScreen] currentMode].size) : NO)
-#define isIPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,1136), [[UIScreen mainScreen] currentMode].size) : NO)
-#define isIPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750,1334), [[UIScreen mainScreen] currentMode].size) : NO)
-#define isIPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242,2208), [[UIScreen mainScreen] currentMode].size) : NO)
-#define isIPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125,2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//***************************屏幕的适配比例********************************
+#define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define isIPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,960), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define isIPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,1136), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define isIPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750,1334), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define isIPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242,2208), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define isIPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125,2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define isIPhoneXr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+#define isIPhoneXMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !isPad: NO)
+//iphoneX 系列
+#define isIPhoneXAll (isIPhoneX || isIPhoneXr || isIPhoneXMax)
+
 //屏幕大小
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -79,4 +85,9 @@ fprintf(stderr, "-------\n");                                               \
 #define ALLocalizedString(str)  NSLocalizedString(str, nil)
 //单独线高度
 #define SINGLE_LINE_HIGHT  (1.0 / [UIScreen mainScreen].scale)
+
+// 使用三基色、透明度实例化UIClor
+#define rgb(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define rgba(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
 #endif /* YLGlobalMacros_h */

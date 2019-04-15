@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (YLAdditions)
-
+/** 检测是否是空字符串(去除空字符后) */
++ (BOOL)isEmpty:(NSString *)string;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,7 +8,7 @@
 
 #import "UICollectionViewCell+Category.h"
 
-@implementation UICollectionViewCell (Category)
+@implementation UICollectionViewCell (YLAdditions)
 + (NSString *)cellReuseIdentifier {
     return NSStringFromClass([self class]);
 }

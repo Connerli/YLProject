@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YLNavigationControllerProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLBaseViewController : UIViewController
+@interface YLBaseViewController : UIViewController<YLNavigationControllerProtocol>
 
 @end
 

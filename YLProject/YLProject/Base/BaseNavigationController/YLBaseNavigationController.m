@@ -7,9 +7,10 @@
 //
 
 #import "YLBaseNavigationController.h"
+#import "YLNavigationControllerProtocol.h"
 
-@interface YLBaseNavigationController ()
-
+@interface YLBaseNavigationController ()<UINavigationControllerDelegate>
+@property (nonatomic, weak) UIViewController *lastTopViewController;
 @end
 
 @implementation YLBaseNavigationController
@@ -17,16 +18,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.delegate = self;
+    self.navigationBar.translucent = NO;
+    [self.navigationBar setTintColor:[UIColor whiteColor]];
+    self.navigationBar.backgroundColor = [UIColor whiteColor];
+    self.navigationBar.shadowImage = [[UIImage alloc] init];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - UINavigationControllerDelegate
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    /* 原controller将消失回调 (self.lastViewController == viewController:tabbar切换index)*/
+    if (self.lastTopViewController && self.lastTopViewController != viewController && [self.lastTopViewController respondsToSelector:@selector(navigationWillHideMeAndShowViewController:)]) {
+        [self.lastTopViewController performSelector:@selector(navigationWillHideMeAndShowViewController:) withObject:viewController];
+    }
+    
+    /** 新controller 将出现回调 */
+    if ([viewController respondsToSelector:@selector(navigationWillShowMeAndHideViewController:)]) {
+        [viewController performSelector:@selector(navigationWillShowMeAndHideViewController:) withObject:self.lastTopViewController];
+    }
+    
 }
-*/
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    /** 原controller 消失回调 */
+    if (self.lastTopViewController && self.lastTopViewController != viewController && [self.lastTopViewController respondsToSelector:@selector(navigationDidHideMeAndShowViewController:)]) {
+        [self.lastTopViewController performSelector:@selector(navigationDidHideMeAndShowViewController:) withObject:viewController];
+    }
+    
+    /** 新controller 出现回调 */
+    if ([viewController respondsToSelector:@selector(navigationDidShowMeAndHideViewController:)]) {
+        [viewController performSelector:@selector(navigationDidShowMeAndHideViewController:) withObject:self.lastTopViewController];
+    }
+    
+    self.lastTopViewController = viewController;
+}
 
 @end

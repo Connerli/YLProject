@@ -1,5 +1,5 @@
 //
-//  UICollectionViewCell+Category.h
+//  UICollectionViewCell+YLAdditions.h
 //  Doctor
 //
 //  Created by Conner on 2017/8/28.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UICollectionViewCell (Category)
+@interface UICollectionViewCell (YLAdditions)
 + (NSString *)cellReuseIdentifier;
 
 + (UINib *)cellWithNib;
