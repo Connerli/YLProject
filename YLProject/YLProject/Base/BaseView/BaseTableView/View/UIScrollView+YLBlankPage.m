@@ -1,12 +1,12 @@
 //
-//  UIScrollView+CYBlankPage.m
+//  UIScrollView+YLBlankPage.m
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "UIScrollView+CYBlankPage.h"
+#import "UIScrollView+YLBlankPage.h"
 #import <objc/runtime.h>
 
 #define PLACE_TIP_TITLE_FONT                    [UIFont systemFontOfSize:13]
@@ -27,7 +27,7 @@ static const char *scrollview_placeimage_type_tag       = "scrollview_placeimage
 NSString *const textRange = @"textRange";
 NSString *const textLine = @"textLine";
 
-@implementation UIScrollView (CYBlankPage)
+@implementation UIScrollView (YLBlankPage)
 
 - (void)setPlaceImageTyp:(PlaceImageType)placeImageTyp
 {

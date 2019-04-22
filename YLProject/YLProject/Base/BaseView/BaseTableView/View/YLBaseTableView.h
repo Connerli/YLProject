@@ -1,19 +1,19 @@
 //
-//  CYBaseTableView.h
+//  YLBaseTableView.h
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@class CYBaseTableView;
+@class YLBaseTableView;
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^TableViewStartRefreshBlock)(CYBaseTableView *tableView);
-typedef void (^TableViewStartLoadMoreBlock)(CYBaseTableView *tableView);
+typedef void (^TableViewStartRefreshBlock)(YLBaseTableView *tableView);
+typedef void (^TableViewStartLoadMoreBlock)(YLBaseTableView *tableView);
 
-@interface CYBaseTableView : UITableView
+@interface YLBaseTableView : UITableView
 /// 下拉刷新回调
 @property (copy, nonatomic) TableViewStartRefreshBlock startRefreshBlock;
 /// 加载更多回调

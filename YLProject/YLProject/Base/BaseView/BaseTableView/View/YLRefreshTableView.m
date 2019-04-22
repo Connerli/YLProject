@@ -1,26 +1,26 @@
 //
-//  CYRefreshTableView.m
+//  YLRefreshTableView.m
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "CYRefreshTableView.h"
-#import "CYBaseTableView.h"
-#import "CYBaseCellModel.h"
-#import "CYBaseCell.h"
+#import "YLRefreshTableView.h"
+#import "YLBaseTableView.h"
+#import "YLBaseCellModel.h"
+#import "YLBaseCell.h"
 
 @interface CYRefreshDelegateForward : NSObject <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, weak) id<CYTableViewDelegate, UITableViewDataSource> outSideDelegate;
-@property (nonatomic, weak) CYRefreshTableView *tableView;
+@property (nonatomic, weak) id<YLTableViewDelegate, UITableViewDataSource> outSideDelegate;
+@property (nonatomic, weak) YLRefreshTableView *tableView;
 @end
 
-@interface CYRefreshTableView ()
+@interface YLRefreshTableView ()
 @property (nonatomic, strong) CYRefreshDelegateForward *forwarder;
 @end
 
-@implementation CYRefreshTableView
+@implementation YLRefreshTableView
 
 #pragma mark - Public
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
@@ -29,7 +29,7 @@
         _forwarder = [[CYRefreshDelegateForward alloc] init];
         _forwarder.tableView = self;
         
-        _tableView = [[CYBaseTableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height) style:style];
+        _tableView = [[YLBaseTableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height) style:style];
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView setSeparatorInset:UIEdgeInsetsZero];
@@ -41,7 +41,7 @@
     return self;
 }
 
-- (__kindof CYBaseCellModel*)objectForRowAtIndexPath:(NSIndexPath*)indexPath {
+- (__kindof YLBaseCellModel*)objectForRowAtIndexPath:(NSIndexPath*)indexPath {
     if ([self itemsDoubleDimensionalArray]) {
         return [[_items safeObjectAtIndex:indexPath.section] safeObjectAtIndex:indexPath.row];
     } else {
@@ -141,9 +141,9 @@
 
 #pragma mark - Setter & Getter
 
-- (void)setDelegate:(id<CYTableViewDelegate>)delegate {
+- (void)setDelegate:(id<YLTableViewDelegate>)delegate {
     _delegate = delegate;
-    _forwarder.outSideDelegate = (id<CYTableViewDelegate,UITableViewDelegate,UITableViewDataSource>)delegate;
+    _forwarder.outSideDelegate = (id<YLTableViewDelegate,UITableViewDelegate,UITableViewDataSource>)delegate;
     
     _tableView.delegate = _forwarder;
     _tableView.dataSource = _forwarder;
@@ -216,8 +216,8 @@
         return [_outSideDelegate tableView:tableView cellForRowAtIndexPath:indexPath];
     }
     
-    CYBaseCellModel *object = [self.tableView objectForRowAtIndexPath:indexPath];
-    if (!object ||![object isKindOfClass:[CYBaseCellModel class]]){
+    YLBaseCellModel *object = [self.tableView objectForRowAtIndexPath:indexPath];
+    if (!object ||![object isKindOfClass:[YLBaseCellModel class]]){
         return nil;
     }
     object.indexPath = indexPath;
@@ -239,8 +239,8 @@
         }
     }
     
-    if ([cell isKindOfClass:[CYBaseCell class]]) {
-        CYBaseCell *tempCell = (CYBaseCell *)cell;
+    if ([cell isKindOfClass:[YLBaseCell class]]) {
+        YLBaseCell *tempCell = (YLBaseCell *)cell;
         [tempCell setModel:object];
         tempCell.indexPath = indexPath;
     }
@@ -252,7 +252,7 @@
         return [_outSideDelegate tableView:tableView heightForRowAtIndexPath:indexPath];
     }
     
-    CYBaseCellModel *object = [self.tableView objectForRowAtIndexPath:indexPath];
+    YLBaseCellModel *object = [self.tableView objectForRowAtIndexPath:indexPath];
     Class cellClass = [object cellClass];
     return [cellClass tableView:tableView rowHeightForItem:object];
 }
@@ -266,7 +266,7 @@
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    CYBaseCell *object = (CYBaseCell *)[self.tableView objectForRowAtIndexPath:indexPath];
+    YLBaseCell *object = (YLBaseCell *)[self.tableView objectForRowAtIndexPath:indexPath];
     if (_outSideDelegate && [_outSideDelegate respondsToSelector:@selector(tableView:didSelectObject:atIndexPath:)]) {
         [_outSideDelegate tableView:tableView didSelectObject:object atIndexPath:indexPath];
     }

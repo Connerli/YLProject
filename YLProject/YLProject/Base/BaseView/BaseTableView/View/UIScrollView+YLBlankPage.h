@@ -1,9 +1,9 @@
 //
-//  UIScrollView+CYBlankPage.h
+//  UIScrollView+YLBlankPage.h
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -21,7 +21,7 @@ typedef void(^PlaceLabelBlock)(NSInteger i, PlaceImageType type);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIScrollView (CYBlankPage)
+@interface UIScrollView (YLBlankPage)
 @property (nonatomic ,copy) PlaceImageBlock  placeImageClickBlock; // 击事件的回调
 @property (nonatomic, copy) PlaceLabelBlock  placeLabelBlock;      // 点击文字的回调
 @property (nonatomic ,assign) PlaceImageType  placeImageType;       // 类型

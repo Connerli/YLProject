@@ -1,32 +1,33 @@
 //
-//  CYRefreshTableView.h
+//  YLRefreshTableView.h
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "CYBaseTableView.h"
-#import "UIScrollView+CYBlankPage.h"
-@class CYBaseCellModel;
-@class CYBaseTableView;
-@class CYRefreshTableView;
+#import "YLBaseTableView.h"
+#import "UIScrollView+YLBlankPage.h"
+
+@class YLBaseCellModel;
+@class YLBaseTableView;
+@class YLRefreshTableView;
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol CYTableViewDelegate <NSObject, UITableViewDelegate>
+@protocol YLTableViewDelegate <NSObject, UITableViewDelegate>
 @optional
-- (void)tableView:(CYBaseTableView *)tableView didSelectObject:(CYBaseCellModel *)object atIndexPath:(NSIndexPath*)indexPath;
+- (void)tableView:(YLBaseTableView *)tableView didSelectObject:(YLBaseCellModel *)object atIndexPath:(NSIndexPath*)indexPath;
 @end
 
 
 
-@interface CYRefreshTableView : UIView
+@interface YLRefreshTableView : UIView
 /// 必须设值,即便是nil. delegate 可以获取 <LDBaseTableViewDelegate,UITableViewDelegate,UITableViewDataSource>的所有方法回调
-@property (nonatomic ,weak) id<CYTableViewDelegate> delegate;
+@property (nonatomic ,weak) id<YLTableViewDelegate> delegate;
 
 /// 公开内部tableView 为了属性设置使用 ps：尽量使用下面的属性和方法不直接设置tableView
-@property (nonatomic ,strong) CYBaseTableView *tableView;
+@property (nonatomic ,strong) YLBaseTableView *tableView;
 
 /// 二维数组 一维度为分区 二维度为分区元素个数 如果只有一个数组列表则为一维度数组，内部处理了
 /// 赋值后自动调用 reloadData
@@ -65,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param indexPath 对应位置
  @return item
  */
-- (__kindof CYBaseCellModel*)objectForRowAtIndexPath:(NSIndexPath*)indexPath;
+- (__kindof YLBaseCellModel*)objectForRowAtIndexPath:(NSIndexPath*)indexPath;
 
 /**
  显示下拉刷新的动画, 并调用 startRefreshBlock

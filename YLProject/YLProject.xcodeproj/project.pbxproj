@@ -13,11 +13,11 @@
 		13063E1D22646C37000F725E /* YLMainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E1C22646C37000F725E /* YLMainRootViewController.m */; };
 		13063E2022646DC9000F725E /* YLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E1F22646DC9000F725E /* YLMeViewController.m */; };
 		13063E2322646DE5000F725E /* YLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13063E2222646DE5000F725E /* YLHomeViewController.m */; };
-		13095127226DD9EA005E5961 /* CYBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095119226DD9EA005E5961 /* CYBaseCell.m */; };
-		13095128226DD9EA005E5961 /* CYBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309511C226DD9EA005E5961 /* CYBaseCellModel.m */; };
-		13095129226DD9EA005E5961 /* UIScrollView+CYBlankPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095121226DD9EA005E5961 /* UIScrollView+CYBlankPage.m */; };
-		1309512A226DD9EA005E5961 /* CYBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095123226DD9EA005E5961 /* CYBaseTableView.m */; };
-		1309512B226DD9EA005E5961 /* CYRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095124226DD9EA005E5961 /* CYRefreshTableView.m */; };
+		13095127226DD9EA005E5961 /* YLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095119226DD9EA005E5961 /* YLBaseCell.m */; };
+		13095128226DD9EA005E5961 /* YLBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309511C226DD9EA005E5961 /* YLBaseCellModel.m */; };
+		13095129226DD9EA005E5961 /* UIScrollView+YLBlankPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095121226DD9EA005E5961 /* UIScrollView+YLBlankPage.m */; };
+		1309512A226DD9EA005E5961 /* YLBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095123226DD9EA005E5961 /* YLBaseTableView.m */; };
+		1309512B226DD9EA005E5961 /* YLRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095124226DD9EA005E5961 /* YLRefreshTableView.m */; };
 		13095131226DDC96005E5961 /* NSArray+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095130226DDC96005E5961 /* NSArray+YLKit.m */; };
 		13095137226DE0AE005E5961 /* UITableView+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095136226DE0AE005E5961 /* UITableView+YLKit.m */; };
 		1309513D226DE116005E5961 /* UIView+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309513C226DE116005E5961 /* UIView+YLKit.m */; };
@@ -90,16 +90,16 @@
 		13063E1F22646DC9000F725E /* YLMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMeViewController.m; sourceTree = "<group>"; };
 		13063E2122646DE5000F725E /* YLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeViewController.h; sourceTree = "<group>"; };
 		13063E2222646DE5000F725E /* YLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeViewController.m; sourceTree = "<group>"; };
-		13095118226DD9EA005E5961 /* CYBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseCell.h; sourceTree = "<group>"; };
-		13095119226DD9EA005E5961 /* CYBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseCell.m; sourceTree = "<group>"; };
-		1309511B226DD9EA005E5961 /* CYBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseCellModel.h; sourceTree = "<group>"; };
-		1309511C226DD9EA005E5961 /* CYBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseCellModel.m; sourceTree = "<group>"; };
-		13095120226DD9EA005E5961 /* UIScrollView+CYBlankPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYBlankPage.h"; sourceTree = "<group>"; };
-		13095121226DD9EA005E5961 /* UIScrollView+CYBlankPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYBlankPage.m"; sourceTree = "<group>"; };
-		13095122226DD9EA005E5961 /* CYRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRefreshTableView.h; sourceTree = "<group>"; };
-		13095123226DD9EA005E5961 /* CYBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseTableView.m; sourceTree = "<group>"; };
-		13095124226DD9EA005E5961 /* CYRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRefreshTableView.m; sourceTree = "<group>"; };
-		13095126226DD9EA005E5961 /* CYBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseTableView.h; sourceTree = "<group>"; };
+		13095118226DD9EA005E5961 /* YLBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseCell.h; sourceTree = "<group>"; };
+		13095119226DD9EA005E5961 /* YLBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseCell.m; sourceTree = "<group>"; };
+		1309511B226DD9EA005E5961 /* YLBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseCellModel.h; sourceTree = "<group>"; };
+		1309511C226DD9EA005E5961 /* YLBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseCellModel.m; sourceTree = "<group>"; };
+		13095120226DD9EA005E5961 /* UIScrollView+YLBlankPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YLBlankPage.h"; sourceTree = "<group>"; };
+		13095121226DD9EA005E5961 /* UIScrollView+YLBlankPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YLBlankPage.m"; sourceTree = "<group>"; };
+		13095122226DD9EA005E5961 /* YLRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRefreshTableView.h; sourceTree = "<group>"; };
+		13095123226DD9EA005E5961 /* YLBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseTableView.m; sourceTree = "<group>"; };
+		13095124226DD9EA005E5961 /* YLRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRefreshTableView.m; sourceTree = "<group>"; };
+		13095126226DD9EA005E5961 /* YLBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseTableView.h; sourceTree = "<group>"; };
 		1309512F226DDC96005E5961 /* NSArray+YLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+YLKit.h"; sourceTree = "<group>"; };
 		13095130226DDC96005E5961 /* NSArray+YLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YLKit.m"; sourceTree = "<group>"; };
 		13095135226DE0AE005E5961 /* UITableView+YLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+YLKit.h"; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 		13095117226DD9EA005E5961 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				13095118226DD9EA005E5961 /* CYBaseCell.h */,
-				13095119226DD9EA005E5961 /* CYBaseCell.m */,
+				13095118226DD9EA005E5961 /* YLBaseCell.h */,
+				13095119226DD9EA005E5961 /* YLBaseCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -269,8 +269,8 @@
 		1309511A226DD9EA005E5961 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1309511B226DD9EA005E5961 /* CYBaseCellModel.h */,
-				1309511C226DD9EA005E5961 /* CYBaseCellModel.m */,
+				1309511B226DD9EA005E5961 /* YLBaseCellModel.h */,
+				1309511C226DD9EA005E5961 /* YLBaseCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,12 +278,12 @@
 		1309511D226DD9EA005E5961 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				13095126226DD9EA005E5961 /* CYBaseTableView.h */,
-				13095123226DD9EA005E5961 /* CYBaseTableView.m */,
-				13095122226DD9EA005E5961 /* CYRefreshTableView.h */,
-				13095124226DD9EA005E5961 /* CYRefreshTableView.m */,
-				13095120226DD9EA005E5961 /* UIScrollView+CYBlankPage.h */,
-				13095121226DD9EA005E5961 /* UIScrollView+CYBlankPage.m */,
+				13095126226DD9EA005E5961 /* YLBaseTableView.h */,
+				13095123226DD9EA005E5961 /* YLBaseTableView.m */,
+				13095122226DD9EA005E5961 /* YLRefreshTableView.h */,
+				13095124226DD9EA005E5961 /* YLRefreshTableView.m */,
+				13095120226DD9EA005E5961 /* UIScrollView+YLBlankPage.h */,
+				13095121226DD9EA005E5961 /* UIScrollView+YLBlankPage.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,10 +488,10 @@
 			isa = PBXGroup;
 			children = (
 				13063E13226434A7000F725E /* YLUtilsHeaders.h */,
-				13B6AA5C2261C9B4004B76D7 /* TimeUtils */,
-				13B6AA5F2261C9B4004B76D7 /* UserDefaults */,
 				13063E1022643372000F725E /* YLAPPInfoTool.h */,
 				13063E1122643372000F725E /* YLAPPInfoTool.m */,
+				13B6AA5C2261C9B4004B76D7 /* TimeUtils */,
+				13B6AA5F2261C9B4004B76D7 /* UserDefaults */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -846,7 +846,7 @@
 			files = (
 				13063E0C22642E11000F725E /* YLMainTabBarController.m in Sources */,
 				13B6AA822261C9BC004B76D7 /* NSObject+ClassInfo.m in Sources */,
-				13095128226DD9EA005E5961 /* CYBaseCellModel.m in Sources */,
+				13095128226DD9EA005E5961 /* YLBaseCellModel.m in Sources */,
 				13B6AA802261C9BC004B76D7 /* KSDecimalNumber.m in Sources */,
 				13B2F8FB2268207A00185915 /* CALayer+YLKit.m in Sources */,
 				13095137226DE0AE005E5961 /* UITableView+YLKit.m in Sources */,
@@ -863,10 +863,10 @@
 				13063E0F22642F7D000F725E /* YLNetworkConfig.m in Sources */,
 				13B6A9FE2261C8E7004B76D7 /* AppDelegate.m in Sources */,
 				13A84575226588060023F5ED /* YLDIYRefreshHeader.m in Sources */,
-				13095127226DD9EA005E5961 /* CYBaseCell.m in Sources */,
+				13095127226DD9EA005E5961 /* YLBaseCell.m in Sources */,
 				13B6AA762261C9B4004B76D7 /* YLConstNotification.m in Sources */,
 				13B2F8FE226820D300185915 /* NSString+YLKit.m in Sources */,
-				1309512B226DD9EA005E5961 /* CYRefreshTableView.m in Sources */,
+				1309512B226DD9EA005E5961 /* YLRefreshTableView.m in Sources */,
 				13063E1D22646C37000F725E /* YLMainRootViewController.m in Sources */,
 				13063E2322646DE5000F725E /* YLHomeViewController.m in Sources */,
 				13B6AA732261C9B4004B76D7 /* YLUserDefaults+Properties.m in Sources */,
@@ -876,8 +876,8 @@
 				13B6AA722261C9B4004B76D7 /* YLTimeUtils.m in Sources */,
 				13B6AA422261C973004B76D7 /* YLBaseNavigationController.m in Sources */,
 				13063E1222643372000F725E /* YLAPPInfoTool.m in Sources */,
-				13095129226DD9EA005E5961 /* UIScrollView+CYBlankPage.m in Sources */,
-				1309512A226DD9EA005E5961 /* CYBaseTableView.m in Sources */,
+				13095129226DD9EA005E5961 /* UIScrollView+YLBlankPage.m in Sources */,
+				1309512A226DD9EA005E5961 /* YLBaseTableView.m in Sources */,
 				1309513D226DE116005E5961 /* UIView+YLKit.m in Sources */,
 				13B6AA742261C9B4004B76D7 /* YLUserDefaults.m in Sources */,
 			);

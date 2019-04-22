@@ -3,12 +3,12 @@
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "CYBaseCell.h"
+#import "YLBaseCell.h"
 
-@implementation CYBaseCell
+@implementation YLBaseCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -21,7 +21,7 @@
     // Configure the view for the selected state
 }
 
-+ (CGFloat)tableView:(UITableView *)tableView rowHeightForItem:(CYBaseCellModel *)model {
++ (CGFloat)tableView:(UITableView *)tableView rowHeightForItem:(YLBaseCellModel *)model {
     return 0.f;
 }
 

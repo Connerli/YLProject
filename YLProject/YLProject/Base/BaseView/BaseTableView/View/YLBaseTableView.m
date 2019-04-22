@@ -3,14 +3,14 @@
 //  YETApp
 //
 //  Created by Conner on 2019/4/22.
-//  Copyright © 2019年 HuaLing. All rights reserved.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "CYBaseTableView.h"
+#import "YLBaseTableView.h"
 #import "YLDIYRefreshHeader.h"
 #import "YLDIYRefreshFooter.h"
 
-@implementation CYBaseTableView
+@implementation YLBaseTableView
 
 - (instancetype)init {
     return [self initWithFrame:CGRectZero style:UITableViewStylePlain];
