@@ -13,20 +13,25 @@ pod 'YTKNetwork', '~> 2.0.4'
 pod 'SDWebImage','~> 4.3.3'
 pod 'Masonry','~> 1.1.0'
 pod 'SVProgressHUD','~> 2.2.5'
-pod 'MJRefresh','~> 3.1.15.3'
 pod 'IQKeyboardManager','~> 6.0.2'
 pod 'FMDB','~> 2.7.2'
+pod 'LKDBHelper', '~> 2.5.1'
 pod 'TYCyclePagerView','~> 1.1.0'
 pod 'GVUserDefaults', '~> 1.0.2'
 pod 'WebViewJavascriptBridge', '~> 6.0'
-pod 'HHRouter', '~> 0.1.9'
-pod 'WMPageController', '~> 2.5.2'
-    
+pod 'MJRefresh', '~> 3.1.16'
+pod 'HHRouter', '~> 0.1.9'              #路由
+pod 'WMPageController', '~> 2.5.2'      #多列表页面
+pod 'CocoaLumberjack', '~> 3.5.2'       #日志库
+pod 'LBXScan', '~> 2.3'                 #扫一扫
+pod 'M13ProgressSuite', '~> 1.2.9'      #进度条
+pod 'ActionSheetPicker-3.0', '~> 2.3.0' #时间选择器
+
 #调试库
-pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'
-pod 'YLControllerName', :configuration => 'Debug'
-pod 'MLeaksFinder', :configuration => 'Debug'
-pod 'DoraemonKit/Core', '~> 1.1.7', :configuration => 'Debug'
+pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'           #调试接口
+pod 'YLControllerName', :configuration => 'Debug'                 #显示类名
+pod 'MLeaksFinder', :configuration => 'Debug'                     #检测内存泄漏
+pod 'DoraemonKit/Core', '~> 1.1.7', :configuration => 'Debug'     #调试模式
 pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configuration => 'Debug'
 pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configuration => 'Debug'
 pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configuration => 'Debug'

@@ -1,26 +1,25 @@
 //
-//  UITableView+Common.m
-//  Pods
+//  UITableView+YLKit.m
+//  YLProject
 //
-//  Created by Conner on 17/3/22.
-//
+//  Created by Conner on 2019/4/22.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "UITableView+Common.h"
+#import "UITableView+YLKit.h"
 
-@implementation UITableView (Common)
-
+@implementation UITableView (YLKit)
 - (void)addLineforPlainCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath withLeftSpace:(CGFloat)leftSpace hasSectionLine:(BOOL)hasSectionLine{
     CAShapeLayer *layer = [[CAShapeLayer alloc] init];
-
+    
     CGMutablePathRef pathRef = CGPathCreateMutable();
-
+    
     CGRect bounds = CGRectInset(cell.bounds, 0, 0);
-
+    
     CGPathAddRect(pathRef, nil, bounds);
-
+    
     layer.path = pathRef;
-
+    
     CFRelease(pathRef);
     if (cell.backgroundColor) {
         layer.fillColor = cell.backgroundColor.CGColor;//layer的填充色用cell原本的颜色
@@ -29,10 +28,10 @@
     }else{
         layer.fillColor = [UIColor colorWithWhite:1.f alpha:0.8f].CGColor;
     }
-
+    
     CGColorRef lineColor = [UIColor hexString:@"#dddddd"].CGColor;
     CGColorRef sectionLineColor = lineColor;
-
+    
     if (indexPath.row == 0 && indexPath.row == [self numberOfRowsInSection:indexPath.section]-1) {
         //只有一个cell。加上长线&下长线
         if (hasSectionLine) {
@@ -64,7 +63,7 @@
 }
 
 - (void)layer:(CALayer *)layer addLineUp:(BOOL)isUp andLong:(BOOL)isLong andColor:(CGColorRef)color andBounds:(CGRect)bounds withLeftSpace:(CGFloat)leftSpace {
-
+    
     CALayer *lineLayer = [[CALayer alloc] init];
     CGFloat lineHeight = (1.0f / [UIScreen mainScreen].scale);
     CGFloat left, top;
@@ -73,7 +72,7 @@
     }else{
         top = bounds.size.height-lineHeight;
     }
-
+    
     if (isLong) {
         left = 0;
     }else{
@@ -109,6 +108,6 @@
     UIView *testView = [[UIView alloc] initWithFrame:bounds];
     [testView.layer insertSublayer:layer atIndex:0];
     cell.backgroundView = testView;
-
 }
+
 @end

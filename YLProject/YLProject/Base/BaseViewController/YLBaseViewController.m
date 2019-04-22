@@ -28,5 +28,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 @end

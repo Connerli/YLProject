@@ -1,14 +1,14 @@
 //
-//  UIColor+YLAdditions.m
+//  UIColor+YLKit.m
 //  YLProject
 //
-//  Created by Conner on 2019/4/13.
+//  Created by Conner on 2019/4/22.
 //  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "UIColor+YLAdditions.h"
+#import "UIColor+YLKit.h"
 
-@implementation UIColor (YLAdditions)
+@implementation UIColor (YLKit)
 + (UIColor * _Nonnull)hex:(NSString *)hexString {
     NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
     CGFloat alpha, red, blue, green;
@@ -55,6 +55,10 @@
     [[NSScanner scannerWithString:fullHex] scanHexInt:&hexComponent];
     
     return hexComponent / 255.0;
+}
+
++ (id _Nonnull)colorWithHex:(unsigned int)hex alpha:(float)alpha {
+    return [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:alpha];
 }
 
 @end

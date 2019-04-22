@@ -1,14 +1,14 @@
 //
-//  UIView+YLAddition.m
-//  PersonalProjects
+//  UIView+YLKit.m
+//  YLProject
 //
-//  Created by Conner on 2018/6/25.
-//  Copyright © 2018年 Conner. All rights reserved.
+//  Created by Conner on 2019/4/22.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "UIView+YLAddition.h"
+#import "UIView+YLKit.h"
 
-@implementation UIView (YLAddition)
+@implementation UIView (YLKit)
 - (CGFloat)left {
     return self.frame.origin.x;
 }
@@ -162,4 +162,13 @@
     }
     return nil;
 }
+
++ (NSString *)viewClassName {
+    return NSStringFromClass([self class]);
+}
+
++ (UINib *)viewWithNib {
+    return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
+}
+
 @end

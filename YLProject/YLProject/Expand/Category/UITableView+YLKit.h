@@ -1,14 +1,16 @@
 //
-//  UITableView+Common.h
+//  UITableView+YLKit.h
+//  YLProject
 //
+//  Created by Conner on 2019/4/22.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
-//  Created by Conner on 17/3/22.
-//
-//  添加分割线
 
 #import <UIKit/UIKit.h>
 
-@interface UITableView (Common)
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UITableView (YLKit)
 /**
  *  为UITableViewCell添加分割线（默认是添加分区线为添加长线）
  *
@@ -36,3 +38,5 @@
  */
 - (void)addShortLineforPlainCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath withLeftSpace:(CGFloat)leftSpace;
 @end
+
+NS_ASSUME_NONNULL_END

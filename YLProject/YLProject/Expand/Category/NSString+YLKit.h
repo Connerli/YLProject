@@ -1,8 +1,8 @@
 //
-//  NSString+YLAdditions.h
-//  PersonalProject
+//  NSString+YLKit.h
+//  YLProject
 //
-//  Created by conner on 2019/1/29.
+//  Created by Conner on 2019/4/18.
 //  Copyright © 2019年 Conner. All rights reserved.
 //
 
@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (YLAdditions)
+@interface NSString (YLKit)
 /** 检测是否是空字符串(去除空字符后) */
 + (BOOL)isEmpty:(NSString *)string;
+
 @end
 
 NS_ASSUME_NONNULL_END

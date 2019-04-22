@@ -1,14 +1,16 @@
 //
-//  UIView+YLAddition.h
-//  PersonalProjects
+//  UIView+YLKit.h
+//  YLProject
 //
-//  Created by Conner on 2018/6/25.
-//  Copyright © 2018年 Conner. All rights reserved.
+//  Created by Conner on 2019/4/22.
+//  Copyright © 2019年 Conner. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (YLAddition)
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIView (YLKit)
 /**
  * Shortcut for frame.origin.x.
  *
@@ -101,4 +103,10 @@
 @property (nonatomic) CGSize size;
 //控制器
 - (UIViewController*)viewController;
+//重用标识符号
++ (NSString *)viewClassName;
+//nib 文件
++ (UINib *)viewWithNib;
 @end
+
+NS_ASSUME_NONNULL_END

@@ -1,14 +1,15 @@
 //
-//  NSString+YLAdditions.m
-//  PersonalProject
+//  NSString+YLKit.m
+//  YLProject
 //
-//  Created by conner on 2019/1/29.
+//  Created by Conner on 2019/4/18.
 //  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "NSString+YLAdditions.h"
+#import "NSString+YLKit.h"
 
-@implementation NSString (YLAdditions)
+@implementation NSString (YLKit)
+
 + (BOOL)isEmpty:(NSString *)string {
     if ((NSNull *)string == [NSNull null]) {
         return YES;
@@ -20,5 +21,6 @@
     }
     return NO;
 }
+
 
 @end
