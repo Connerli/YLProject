@@ -12,6 +12,7 @@
 #import "YLUserDefaults+Properties.h"
 #import "YLTimeUtils.h"
 #import "YLAPPInfoTool.h"
+#import "YLProgressHUD.h"
 
 
 #endif /* YLUtilsHeader_h */

@@ -16,7 +16,7 @@ pod 'SVProgressHUD','~> 2.2.5'
 pod 'IQKeyboardManager','~> 6.0.2'
 pod 'FMDB','~> 2.7.2'
 pod 'LKDBHelper', '~> 2.5.1'
-pod 'TYCyclePagerView','~> 1.1.0'
+pod 'TYCyclePagerView','~> 1.1.0'       #卡片样式轮播
 pod 'GVUserDefaults', '~> 1.0.2'
 pod 'WebViewJavascriptBridge', '~> 6.0'
 pod 'MJRefresh', '~> 3.1.16'

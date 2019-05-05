@@ -126,4 +126,29 @@
     [manager startMonitoring];
 }
 
++ (NSString *)URLStringWithBaseUrl:(NSString *)baseUrl requestUrl:(NSString *)requestUrl parameters:(NSDictionary *)parameters {
+    NSMutableString *URLString;
+    if ([baseUrl hasSuffix:@"/"]) {
+        URLString = [NSMutableString stringWithFormat:@"%@%@",baseUrl,requestUrl];
+    } else {
+        URLString = [NSMutableString stringWithFormat:@"%@/%@",baseUrl,requestUrl];
+    }
+    //获取字典的所有keys
+    NSArray * keys = [parameters allKeys];
+    //拼接字符串
+    for (int i = 0; i < keys.count; i++){
+        NSString *string;
+        if (i == 0){
+            //拼接时加？
+            string = [NSString stringWithFormat:@"?%@=%@", keys[i], parameters[keys[i]]];
+            
+        }else{
+            //拼接时加&
+            string = [NSString stringWithFormat:@"&%@=%@", keys[i], parameters[keys[i]]];
+        }
+        //拼接字符串
+        [URLString appendString:string];
+    }
+    return URLString;
+}
 @end

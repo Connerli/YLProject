@@ -266,9 +266,9 @@
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    YLBaseCell *object = (YLBaseCell *)[self.tableView objectForRowAtIndexPath:indexPath];
+    YLBaseCellModel *object = (YLBaseCellModel *)[self.tableView objectForRowAtIndexPath:indexPath];
     if (_outSideDelegate && [_outSideDelegate respondsToSelector:@selector(tableView:didSelectObject:atIndexPath:)]) {
-        [_outSideDelegate tableView:tableView didSelectObject:object atIndexPath:indexPath];
+        [_outSideDelegate tableView:(YLBaseTableView *)tableView didSelectObject:object atIndexPath:indexPath];
     }
 }
 

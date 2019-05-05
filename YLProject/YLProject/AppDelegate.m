@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YLMainRootViewController.h"
+#import "YLNetworkConfig.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,10 @@
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
     [self.window makeKeyAndVisible];
+
+    // 网络请求配置和网络状态监听
+    [[YLNetworkConfig sharedInstance] configNetwork];
+    [[YLNetworkConfig sharedInstance] startMonitoring];
     
     YLMainRootViewController *rootViewController = [[YLMainRootViewController alloc] init];
     [self.window setRootViewController:rootViewController];

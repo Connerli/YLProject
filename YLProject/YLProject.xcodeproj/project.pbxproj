@@ -22,6 +22,8 @@
 		13095137226DE0AE005E5961 /* UITableView+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13095136226DE0AE005E5961 /* UITableView+YLKit.m */; };
 		1309513D226DE116005E5961 /* UIView+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309513C226DE116005E5961 /* UIView+YLKit.m */; };
 		13095140226DE271005E5961 /* UIColor+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309513F226DE271005E5961 /* UIColor+YLKit.m */; };
+		133BF906227EBB290052AC24 /* YLNetworkEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 133BF905227EBB290052AC24 /* YLNetworkEntity.m */; };
+		133BF90A227EBCE80052AC24 /* YLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 133BF909227EBCE80052AC24 /* YLProgressHUD.m */; };
 		13A84575226588060023F5ED /* YLDIYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A84574226588060023F5ED /* YLDIYRefreshHeader.m */; };
 		13A84578226588360023F5ED /* YLDIYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A84577226588360023F5ED /* YLDIYRefreshFooter.m */; };
 		13B2F8FB2268207A00185915 /* CALayer+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B2F8FA2268207A00185915 /* CALayer+YLKit.m */; };
@@ -54,6 +56,7 @@
 		13B6AA902261CDE6004B76D7 /* pre-commit.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8D2261CDE5004B76D7 /* pre-commit.py */; };
 		13B6AA912261CDE6004B76D7 /* commit-msg.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8E2261CDE5004B76D7 /* commit-msg.py */; };
 		13B6AA922261CDE6004B76D7 /* post-commit.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8F2261CDE6004B76D7 /* post-commit.py */; };
+		13CC8A7B2271495C00AE612E /* YLBasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */; };
 		A89D08432194D5B8F6EDA3F4 /* libPods-YLProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E67655B061F35E9A005F8E68 /* libPods-YLProject.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +111,10 @@
 		1309513C226DE116005E5961 /* UIView+YLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLKit.m"; sourceTree = "<group>"; };
 		1309513E226DE271005E5961 /* UIColor+YLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YLKit.h"; sourceTree = "<group>"; };
 		1309513F226DE271005E5961 /* UIColor+YLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YLKit.m"; sourceTree = "<group>"; };
+		133BF904227EBB290052AC24 /* YLNetworkEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetworkEntity.h; sourceTree = "<group>"; };
+		133BF905227EBB290052AC24 /* YLNetworkEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNetworkEntity.m; sourceTree = "<group>"; };
+		133BF908227EBCE80052AC24 /* YLProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLProgressHUD.h; sourceTree = "<group>"; };
+		133BF909227EBCE80052AC24 /* YLProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProgressHUD.m; sourceTree = "<group>"; };
 		13A84573226588060023F5ED /* YLDIYRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDIYRefreshHeader.h; sourceTree = "<group>"; };
 		13A84574226588060023F5ED /* YLDIYRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDIYRefreshHeader.m; sourceTree = "<group>"; };
 		13A84576226588360023F5ED /* YLDIYRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDIYRefreshFooter.h; sourceTree = "<group>"; };
@@ -169,8 +176,12 @@
 		13B6AA8D2261CDE5004B76D7 /* pre-commit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "pre-commit.py"; sourceTree = "<group>"; };
 		13B6AA8E2261CDE5004B76D7 /* commit-msg.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "commit-msg.py"; sourceTree = "<group>"; };
 		13B6AA8F2261CDE6004B76D7 /* post-commit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "post-commit.py"; sourceTree = "<group>"; };
+		13CC8A792271495C00AE612E /* YLBasePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBasePageViewController.h; sourceTree = "<group>"; };
+		13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBasePageViewController.m; sourceTree = "<group>"; };
 		68A8D13C79DD89C51B69F737 /* Pods-YLProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.debug.xcconfig"; sourceTree = "<group>"; };
 		73A0FF6A0DA695ACF616EBE2 /* libPods-YLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		921B168F7F8E7D2A69933795 /* Pods-YLProject.pre.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.pre.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.pre.xcconfig"; sourceTree = "<group>"; };
+		ADAEB83A1C30751882E633A1 /* Pods-YLProject.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.test.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.test.xcconfig"; sourceTree = "<group>"; };
 		BFF832DC22E3F7961799F90A /* Pods-YLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.release.xcconfig"; sourceTree = "<group>"; };
 		D9EC71A86B4E4E44D0CFBD82 /* libPods-YLProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67655B061F35E9A005F8E68 /* libPods-YLProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -410,6 +421,8 @@
 				13B6AA382261C973004B76D7 /* YLBaseViewController.m */,
 				13B6AA3B2261C973004B76D7 /* YLBaseTableViewController.h */,
 				13B6AA392261C973004B76D7 /* YLBaseTableViewController.m */,
+				13CC8A792271495C00AE612E /* YLBasePageViewController.h */,
+				13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -430,6 +443,8 @@
 				13B6AA402261C973004B76D7 /* YLBaseRequest.m */,
 				13063E0D22642F7D000F725E /* YLNetworkConfig.h */,
 				13063E0E22642F7D000F725E /* YLNetworkConfig.m */,
+				133BF904227EBB290052AC24 /* YLNetworkEntity.h */,
+				133BF905227EBB290052AC24 /* YLNetworkEntity.m */,
 			);
 			path = BaseRequest;
 			sourceTree = "<group>";
@@ -490,19 +505,13 @@
 				13063E13226434A7000F725E /* YLUtilsHeaders.h */,
 				13063E1022643372000F725E /* YLAPPInfoTool.h */,
 				13063E1122643372000F725E /* YLAPPInfoTool.m */,
-				13B6AA5C2261C9B4004B76D7 /* TimeUtils */,
+				133BF908227EBCE80052AC24 /* YLProgressHUD.h */,
+				133BF909227EBCE80052AC24 /* YLProgressHUD.m */,
+				13B6AA5E2261C9B4004B76D7 /* YLTimeUtils.h */,
+				13B6AA5D2261C9B4004B76D7 /* YLTimeUtils.m */,
 				13B6AA5F2261C9B4004B76D7 /* UserDefaults */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		13B6AA5C2261C9B4004B76D7 /* TimeUtils */ = {
-			isa = PBXGroup;
-			children = (
-				13B6AA5E2261C9B4004B76D7 /* YLTimeUtils.h */,
-				13B6AA5D2261C9B4004B76D7 /* YLTimeUtils.m */,
-			);
-			path = TimeUtils;
 			sourceTree = "<group>";
 		};
 		13B6AA5F2261C9B4004B76D7 /* UserDefaults */ = {
@@ -605,6 +614,8 @@
 			children = (
 				68A8D13C79DD89C51B69F737 /* Pods-YLProject.debug.xcconfig */,
 				BFF832DC22E3F7961799F90A /* Pods-YLProject.release.xcconfig */,
+				ADAEB83A1C30751882E633A1 /* Pods-YLProject.test.xcconfig */,
+				921B168F7F8E7D2A69933795 /* Pods-YLProject.pre.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -850,8 +861,11 @@
 				13B6AA802261C9BC004B76D7 /* KSDecimalNumber.m in Sources */,
 				13B2F8FB2268207A00185915 /* CALayer+YLKit.m in Sources */,
 				13095137226DE0AE005E5961 /* UITableView+YLKit.m in Sources */,
+				13CC8A7B2271495C00AE612E /* YLBasePageViewController.m in Sources */,
 				13B6AA442261C973004B76D7 /* YLBaseViewController.m in Sources */,
+				133BF906227EBB290052AC24 /* YLNetworkEntity.m in Sources */,
 				13B6AA462261C973004B76D7 /* YLBaseModel.m in Sources */,
+				133BF90A227EBCE80052AC24 /* YLProgressHUD.m in Sources */,
 				13B6AA812261C9BC004B76D7 /* NSDecimalNumber+Addtion.m in Sources */,
 				13063E2022646DC9000F725E /* YLMeViewController.m in Sources */,
 				13B6AA752261C9B4004B76D7 /* YLConstCommon.m in Sources */,
@@ -934,6 +948,235 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		132E7A6822703F0800A20EFA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TEST=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Test;
+		};
+		132E7A6922703F0800A20EFA /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAEB83A1C30751882E633A1 /* Pods-YLProject.test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ENPVW3M9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = YLProject/Expand/Macros/PrefixHeader.pch;
+				INFOPLIST_FILE = YLProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		132E7A6A22703F0800A20EFA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ENPVW3M9;
+				INFOPLIST_FILE = YLProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLProject.app/YLProject";
+			};
+			name = Test;
+		};
+		132E7A6B22703F0800A20EFA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ENPVW3M9;
+				INFOPLIST_FILE = YLProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YLProject;
+			};
+			name = Test;
+		};
+		132E7A6C22703F0F00A20EFA /* Pre */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "PRE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Pre;
+		};
+		132E7A6D22703F0F00A20EFA /* Pre */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921B168F7F8E7D2A69933795 /* Pods-YLProject.pre.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ENPVW3M9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = YLProject/Expand/Macros/PrefixHeader.pch;
+				INFOPLIST_FILE = YLProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Pre;
+		};
+		132E7A6E22703F0F00A20EFA /* Pre */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ENPVW3M9;
+				INFOPLIST_FILE = YLProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLProject.app/YLProject";
+			};
+			name = Pre;
+		};
+		132E7A6F22703F0F00A20EFA /* Pre */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ENPVW3M9;
+				INFOPLIST_FILE = YLProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YLProject;
+			};
+			name = Pre;
+		};
 		13B6AA232261C8EB004B76D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1169,7 +1412,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B6AA232261C8EB004B76D7 /* Debug */,
+				132E7A6822703F0800A20EFA /* Test */,
 				13B6AA242261C8EB004B76D7 /* Release */,
+				132E7A6C22703F0F00A20EFA /* Pre */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1178,7 +1423,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B6AA262261C8EB004B76D7 /* Debug */,
+				132E7A6922703F0800A20EFA /* Test */,
 				13B6AA272261C8EB004B76D7 /* Release */,
+				132E7A6D22703F0F00A20EFA /* Pre */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1187,7 +1434,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B6AA292261C8EB004B76D7 /* Debug */,
+				132E7A6A22703F0800A20EFA /* Test */,
 				13B6AA2A2261C8EB004B76D7 /* Release */,
+				132E7A6E22703F0F00A20EFA /* Pre */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1196,7 +1445,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B6AA2C2261C8EB004B76D7 /* Debug */,
+				132E7A6B22703F0800A20EFA /* Test */,
 				13B6AA2D2261C8EB004B76D7 /* Release */,
+				132E7A6F22703F0F00A20EFA /* Pre */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
