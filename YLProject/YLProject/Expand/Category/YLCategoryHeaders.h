@@ -9,10 +9,5 @@
 #ifndef YLCategoryHeaders_h
 #define YLCategoryHeaders_h
 
-#import "UIView+YLKit.h"
-#import "UIColor+YLKit.h"
-#import "NSString+YLKit.h"
-#import "NSArray+YLKit.h"
-
 
 #endif /* YLCategoryHeaders_h */

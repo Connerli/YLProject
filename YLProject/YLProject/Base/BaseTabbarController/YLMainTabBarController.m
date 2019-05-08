@@ -10,6 +10,7 @@
 #import "YLBaseNavigationController.h"
 #import "YLHomeViewController.h"
 #import "YLMeViewController.h"
+#import "YLDiscoverViewController.h"
 
 @interface YLMainTabBarController ()<UITabBarControllerDelegate>
 
@@ -41,8 +42,9 @@
 
 - (NSArray *)viewControllers {
     YLBaseNavigationController *homeNavigation = [[YLBaseNavigationController alloc] initWithRootViewController:[[YLHomeViewController alloc] init]];
+    YLBaseNavigationController *discoverNavigation = [[YLBaseNavigationController alloc] initWithRootViewController:[[YLDiscoverViewController alloc] init]];
     YLBaseNavigationController *meNavigation = [[YLBaseNavigationController alloc] initWithRootViewController:[[YLMeViewController alloc] init]];
-    NSArray *viewControllers = @[homeNavigation,meNavigation];
+    NSArray *viewControllers = @[homeNavigation,discoverNavigation,meNavigation];
     return viewControllers;
 }
 
@@ -52,6 +54,12 @@
                                                  CYLTabBarItemImage : @"home_normal",
                                                  CYLTabBarItemSelectedImage : @"home_highlight",
                                                  };
+    NSDictionary *secondTabbarItemsAttributes = @{
+                                                  CYLTabBarItemTitle : @"发现",
+                                                  CYLTabBarItemImage : @"discover_normal",
+                                                  CYLTabBarItemSelectedImage : @"discover_highlight",
+                                                  };
+    
     NSDictionary *fourthTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : @"我的",
                                                  CYLTabBarItemImage :@"me_normal",
@@ -59,6 +67,7 @@
                                                   };
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
+                                       secondTabbarItemsAttributes,
                                        fourthTabBarItemsAttributes
                                        ];
     return tabBarItemsAttributes;
@@ -81,7 +90,7 @@
     // set the text color for selected state
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkTextColor];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor hexString:@"#89CCD6"];
     
     // set the text Attributes
     // 设置文字属性

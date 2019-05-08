@@ -6,7 +6,7 @@
 //  Copyright © 2018 Conner. All rights reserved.
 //
 
-#import "YTKBaseRequest.h"
+#import <YTKRequest.h>
 #import "YLNetworkEntity.h"
 
 
@@ -50,7 +50,7 @@ typedef void(^RequestFailedBlock)(NSError *error, BOOL isNetworkError);
 - (void)request:(YLBaseRequest *)request didFailLoadWithError:(NSError*)error;
 @end
 
-@interface YLBaseRequest : YTKBaseRequest
+@interface YLBaseRequest : YTKRequest
 
 /** 获取请求状态改变的代理,block回调无需设值 */
 @property (nonatomic, weak) id <BaseRequestDelegate> requestDelegate;

@@ -24,6 +24,8 @@
 		13095140226DE271005E5961 /* UIColor+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309513F226DE271005E5961 /* UIColor+YLKit.m */; };
 		133BF906227EBB290052AC24 /* YLNetworkEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 133BF905227EBB290052AC24 /* YLNetworkEntity.m */; };
 		133BF90A227EBCE80052AC24 /* YLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 133BF909227EBCE80052AC24 /* YLProgressHUD.m */; };
+		138FC4402282AA8000BCFA14 /* YLConstAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 138FC43F2282AA8000BCFA14 /* YLConstAPI.m */; };
+		138FC4482282C0C800BCFA14 /* YLDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138FC4472282C0C800BCFA14 /* YLDiscoverViewController.m */; };
 		13A84575226588060023F5ED /* YLDIYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A84574226588060023F5ED /* YLDIYRefreshHeader.m */; };
 		13A84578226588360023F5ED /* YLDIYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A84577226588360023F5ED /* YLDIYRefreshFooter.m */; };
 		13B2F8FB2268207A00185915 /* CALayer+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B2F8FA2268207A00185915 /* CALayer+YLKit.m */; };
@@ -115,6 +117,11 @@
 		133BF905227EBB290052AC24 /* YLNetworkEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNetworkEntity.m; sourceTree = "<group>"; };
 		133BF908227EBCE80052AC24 /* YLProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLProgressHUD.h; sourceTree = "<group>"; };
 		133BF909227EBCE80052AC24 /* YLProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProgressHUD.m; sourceTree = "<group>"; };
+		138FC43E2282AA8000BCFA14 /* YLConstAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLConstAPI.h; sourceTree = "<group>"; };
+		138FC43F2282AA8000BCFA14 /* YLConstAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLConstAPI.m; sourceTree = "<group>"; };
+		138FC4422282B7C000BCFA14 /* YLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLKit.h; sourceTree = "<group>"; };
+		138FC4462282C0C800BCFA14 /* YLDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDiscoverViewController.h; sourceTree = "<group>"; };
+		138FC4472282C0C800BCFA14 /* YLDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDiscoverViewController.m; sourceTree = "<group>"; };
 		13A84573226588060023F5ED /* YLDIYRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDIYRefreshHeader.h; sourceTree = "<group>"; };
 		13A84574226588060023F5ED /* YLDIYRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDIYRefreshHeader.m; sourceTree = "<group>"; };
 		13A84576226588360023F5ED /* YLDIYRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDIYRefreshFooter.h; sourceTree = "<group>"; };
@@ -225,6 +232,7 @@
 		13063E1522646A51000F725E /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				138FC4412282AC1800BCFA14 /* Discover */,
 				13063E1722646A75000F725E /* Me */,
 				13063E1622646A6F000F725E /* Home */,
 			);
@@ -297,6 +305,67 @@
 				13095121226DD9EA005E5961 /* UIScrollView+YLBlankPage.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		138FC43C2282A87B00BCFA14 /* YLKit */ = {
+			isa = PBXGroup;
+			children = (
+				138FC4422282B7C000BCFA14 /* YLKit.h */,
+				138FC4432282B7D000BCFA14 /* Foundation */,
+				138FC43D2282A89200BCFA14 /* UIKit */,
+			);
+			path = YLKit;
+			sourceTree = "<group>";
+		};
+		138FC43D2282A89200BCFA14 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				138FC4442282BACC00BCFA14 /* Additions */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		138FC4412282AC1800BCFA14 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				138FC4462282C0C800BCFA14 /* YLDiscoverViewController.h */,
+				138FC4472282C0C800BCFA14 /* YLDiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		138FC4432282B7D000BCFA14 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				138FC4452282BAE400BCFA14 /* Additions */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		138FC4442282BACC00BCFA14 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				1309513E226DE271005E5961 /* UIColor+YLKit.h */,
+				1309513F226DE271005E5961 /* UIColor+YLKit.m */,
+				1309513B226DE116005E5961 /* UIView+YLKit.h */,
+				1309513C226DE116005E5961 /* UIView+YLKit.m */,
+				13B2F8F92268207A00185915 /* CALayer+YLKit.h */,
+				13B2F8FA2268207A00185915 /* CALayer+YLKit.m */,
+				13095135226DE0AE005E5961 /* UITableView+YLKit.h */,
+				13095136226DE0AE005E5961 /* UITableView+YLKit.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		138FC4452282BAE400BCFA14 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				1309512F226DDC96005E5961 /* NSArray+YLKit.h */,
+				13095130226DDC96005E5961 /* NSArray+YLKit.m */,
+				13B2F8FC226820D300185915 /* NSString+YLKit.h */,
+				13B2F8FD226820D300185915 /* NSString+YLKit.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 		13A84571226587280023F5ED /* Custom */ = {
@@ -471,6 +540,7 @@
 		13B6AA4C2261C9B4004B76D7 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				138FC43C2282A87B00BCFA14 /* YLKit */,
 				13B6AA4D2261C9B4004B76D7 /* Category */,
 				13B6AA642261C9B4004B76D7 /* Const */,
 				13B6AA692261C9B4004B76D7 /* Macros */,
@@ -483,18 +553,6 @@
 			isa = PBXGroup;
 			children = (
 				13B2F8F822681AAE00185915 /* YLCategoryHeaders.h */,
-				13B2F8F92268207A00185915 /* CALayer+YLKit.h */,
-				13B2F8FA2268207A00185915 /* CALayer+YLKit.m */,
-				13B2F8FC226820D300185915 /* NSString+YLKit.h */,
-				13B2F8FD226820D300185915 /* NSString+YLKit.m */,
-				1309513B226DE116005E5961 /* UIView+YLKit.h */,
-				1309513C226DE116005E5961 /* UIView+YLKit.m */,
-				13095135226DE0AE005E5961 /* UITableView+YLKit.h */,
-				13095136226DE0AE005E5961 /* UITableView+YLKit.m */,
-				1309513E226DE271005E5961 /* UIColor+YLKit.h */,
-				1309513F226DE271005E5961 /* UIColor+YLKit.m */,
-				1309512F226DDC96005E5961 /* NSArray+YLKit.h */,
-				13095130226DDC96005E5961 /* NSArray+YLKit.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -529,6 +587,8 @@
 			isa = PBXGroup;
 			children = (
 				13063E14226434D9000F725E /* YLConstHeaders.h */,
+				138FC43E2282AA8000BCFA14 /* YLConstAPI.h */,
+				138FC43F2282AA8000BCFA14 /* YLConstAPI.m */,
 				13B6AA662261C9B4004B76D7 /* YLConstCommon.h */,
 				13B6AA672261C9B4004B76D7 /* YLConstCommon.m */,
 				13B6AA652261C9B4004B76D7 /* YLConstNotification.h */,
@@ -878,12 +938,14 @@
 				13B6A9FE2261C8E7004B76D7 /* AppDelegate.m in Sources */,
 				13A84575226588060023F5ED /* YLDIYRefreshHeader.m in Sources */,
 				13095127226DD9EA005E5961 /* YLBaseCell.m in Sources */,
+				138FC4482282C0C800BCFA14 /* YLDiscoverViewController.m in Sources */,
 				13B6AA762261C9B4004B76D7 /* YLConstNotification.m in Sources */,
 				13B2F8FE226820D300185915 /* NSString+YLKit.m in Sources */,
 				1309512B226DD9EA005E5961 /* YLRefreshTableView.m in Sources */,
 				13063E1D22646C37000F725E /* YLMainRootViewController.m in Sources */,
 				13063E2322646DE5000F725E /* YLHomeViewController.m in Sources */,
 				13B6AA732261C9B4004B76D7 /* YLUserDefaults+Properties.m in Sources */,
+				138FC4402282AA8000BCFA14 /* YLConstAPI.m in Sources */,
 				13A84578226588360023F5ED /* YLDIYRefreshFooter.m in Sources */,
 				13B6AA472261C973004B76D7 /* YLBaseRequest.m in Sources */,
 				13095140226DE271005E5961 /* UIColor+YLKit.m in Sources */,

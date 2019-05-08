@@ -68,11 +68,6 @@ fprintf(stderr, "-------\n");                                               \
 //屏幕大小
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define iPhone4Size                 CGSizeMake(640.f / 2.f, 960.f / 2.f)
-#define iPhone5Size                 CGSizeMake(640.f / 2.f, 1136.f / 2.f)
-#define iPhone6Size                 CGSizeMake(750.f / 2.f, 1334.f / 2.f)
-#define iPhone6pSize                CGSizeMake(1242.f / 3.f, 2208.f / 3.f)
-#define iPhoneXSize                 CGSizeMake(1125.f / 3.f, 2436.f / 3.f)
 //iphone6 为基础设备 屏幕适配
 #define DefaultDeviceSize       iPhone6Size
 #define ALLineHeight(...)       ((__VA_ARGS__) / AL_SCREEN_SCALE)
