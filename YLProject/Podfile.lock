@@ -80,6 +80,7 @@ PODS:
   - WebViewJavascriptBridge (6.0.3)
   - WMPageController (2.5.2)
   - YLControllerName (0.0.3)
+  - YLKits (0.0.1)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYCache (1.0.4)
@@ -112,6 +113,7 @@ DEPENDENCIES:
   - WebViewJavascriptBridge (~> 6.0)
   - WMPageController (~> 2.5.2)
   - YLControllerName
+  - YLKits (~> 0.0.1)
   - YTKNetwork (~> 2.0.4)
   - YYCache (~> 1.0.4)
   - YYModel (~> 1.0.4)
@@ -147,6 +149,7 @@ SPEC REPOS:
     - WebViewJavascriptBridge
     - WMPageController
     - YLControllerName
+    - YLKits
     - YTKNetwork
     - YYCache
     - YYModel
@@ -182,12 +185,13 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
   YLControllerName: 31f3062a6e18326c5263669128a6abe4077b94bb
+  YLKits: 126e01fcb221504605530e0ea93d8cab335fa98f
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: dc12e0be171be68bc9e2ba35d2e5ae4d31f24cd9
+PODFILE CHECKSUM: dc0fc29d5a13b393e0109aad940258c0215f8b88
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
