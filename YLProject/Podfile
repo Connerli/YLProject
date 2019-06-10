@@ -26,7 +26,7 @@ pod 'CocoaLumberjack', '~> 3.5.2'       #日志库
 pod 'LBXScan', '~> 2.3'                 #扫一扫
 pod 'M13ProgressSuite', '~> 1.2.9'      #进度条
 pod 'ActionSheetPicker-3.0', '~> 2.3.0' #时间选择器
-pod 'YLKits', '~> 0.0.1'                #自己封装的一些库
+
 
 #调试库
 pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'           #调试接口
