@@ -5,28 +5,28 @@ inhibit_all_warnings!
 
 target 'YLProject' do
     
-pod 'CYLTabBarController', '~> 1.17.7'
+    pod 'CYLTabBarController', '~> 1.17.7' 
 pod 'YYText', '~> 1.0.7'
 pod 'YYCache', '~> 1.0.4'
 pod 'YYModel','~> 1.0.4'
 pod 'YTKNetwork', '~> 2.0.4'
 pod 'SDWebImage','~> 4.3.3'
 pod 'Masonry','~> 1.1.0'
-pod 'SVProgressHUD','~> 2.2.5'
-pod 'IQKeyboardManager','~> 6.0.2'
+pod 'SVProgressHUD','~> 2.2.5'           #显示loading
+pod 'IQKeyboardManager','~> 6.0.2'       #键盘便宜
 pod 'FMDB','~> 2.7.2'
-pod 'LKDBHelper', '~> 2.5.1'
-pod 'TYCyclePagerView','~> 1.1.0'       #卡片样式轮播
-pod 'GVUserDefaults', '~> 1.0.2'
-pod 'WebViewJavascriptBridge', '~> 6.0'
-pod 'MJRefresh', '~> 3.1.16'
-pod 'HHRouter', '~> 0.1.9'              #路由
-pod 'WMPageController', '~> 2.5.2'      #多列表页面
-pod 'CocoaLumberjack', '~> 3.5.2'       #日志库
-pod 'LBXScan', '~> 2.3'                 #扫一扫
-pod 'M13ProgressSuite', '~> 1.2.9'      #进度条
-pod 'ActionSheetPicker-3.0', '~> 2.3.0' #时间选择器
-
+pod 'LKDBHelper', '~> 2.5.1'             #存储
+pod 'TYCyclePagerView','~> 1.1.0'        #卡片样式轮播
+pod 'GVUserDefaults', '~> 1.0.2'         #userDefaults存储
+pod 'WebViewJavascriptBridge', '~> 6.0'  #网页桥接文件
+pod 'MJRefresh', '~> 3.1.16'             #刷新
+pod 'HHRouter', '~> 0.1.9'               #路由
+pod 'WMPageController', '~> 2.5.2'       #多列表页面
+pod 'CocoaLumberjack', '~> 3.5.2'        #日志库
+pod 'LBXScan', '~> 2.3'                  #扫一扫
+pod 'M13ProgressSuite', '~> 1.2.9'       #进度条
+pod 'ActionSheetPicker-3.0', '~> 2.3.0'  #时间选择器
+pod 'YLKits', '~> 0.0.1'                 #平时积累的库
 
 #调试库
 pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'           #调试接口
