@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger, SecondToDateFormat) {
  *
  *  @return 指定格式时间字符串
  */
-+ (NSString *)getSystemTimeStringWithFormat:(SecondToDateFormat)format timeDiff:(BOOL)isCalibration;
++ (NSString *)getSystemTimeStringWithFormat:(SecondToDateFormat)format;
 
 /**
  *  时间戳转日期

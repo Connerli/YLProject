@@ -96,7 +96,7 @@
  *
  *  @return 指定格式时间字符串
  */
-+ (NSString *)getSystemTimeStringWithFormat:(SecondToDateFormat)format timeDiff:(BOOL)isCalibration {
++ (NSString *)getSystemTimeStringWithFormat:(SecondToDateFormat)format {
     long long systemTime = [self getSystemTimeInterval];
     return [self timeStringWithInterval:systemTime format:format];
 }
