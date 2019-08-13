@@ -77,6 +77,24 @@ PODS:
   - TYCyclePagerView (1.1.2)
   - UICountingLabel (1.2.0)
   - "UITextView+Placeholder (1.2.1)"
+  - UMCAnalytics (5.5.4):
+    - UMCCommon
+  - UMCCommon (1.5.3)
+  - UMCCommonLog (1.0.0)
+  - UMCPush (3.2.4):
+    - UMCCommon
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.9.5):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedSina (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
   - WebViewJavascriptBridge (6.0.3)
   - WMPageController (2.5.2)
   - YLControllerName (0.0.3)
@@ -110,6 +128,14 @@ DEPENDENCIES:
   - SDWebImage (~> 4.3.3)
   - SVProgressHUD (~> 2.2.5)
   - TYCyclePagerView (~> 1.1.0)
+  - UMCAnalytics (~> 5.5.0)
+  - UMCCommon (~> 1.5.0)
+  - UMCCommonLog (~> 1.0.0)
+  - UMCPush (~> 3.2.1)
+  - UMCSecurityPlugins (~> 1.0.6)
+  - UMCShare/Social/ReducedQQ (~> 6.9.1)
+  - UMCShare/Social/ReducedSina (~> 6.9.1)
+  - UMCShare/Social/ReducedWeChat (~> 6.9.1)
   - WebViewJavascriptBridge (~> 6.0)
   - WMPageController (~> 2.5.2)
   - YLControllerName
@@ -146,6 +172,12 @@ SPEC REPOS:
     - TYCyclePagerView
     - UICountingLabel
     - "UITextView+Placeholder"
+    - UMCAnalytics
+    - UMCCommon
+    - UMCCommonLog
+    - UMCPush
+    - UMCSecurityPlugins
+    - UMCShare
     - WebViewJavascriptBridge
     - WMPageController
     - YLControllerName
@@ -182,6 +214,12 @@ SPEC CHECKSUMS:
   TYCyclePagerView: 0f67b0986995fd614843e819bc974cadd7f98008
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  UMCAnalytics: 8449e33b7627ee26f1169202827a8d5a00b5442b
+  UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
+  UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
+  UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
   YLControllerName: 31f3062a6e18326c5263669128a6abe4077b94bb
@@ -192,6 +230,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 7f2c3d1eb50775f41d9d849e12483922d31f0529
+PODFILE CHECKSUM: fc37b241f580f2c415875db62a566b5ae7305e09
 
 COCOAPODS: 1.7.0

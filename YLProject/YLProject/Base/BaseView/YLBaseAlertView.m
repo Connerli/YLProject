@@ -14,65 +14,41 @@
 
 @implementation YLBaseAlertView
 
-- (void)hiddenFromSupperView {
-    [self removeFromSuperview];
-    [self.maskView removeFromSuperview];
-    _show = NO;
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addSubview:self.maskView];
+        [self.maskView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
+    }
+    return self;
 }
 
 #pragma mark - Public Methods
-- (void)showInKeyWindowWithAnimated:(BOOL)animated {
+- (void)showInKeyWindow {
     if (!self.isShow) {
         UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
-        [keyWindow addSubview:self.maskView];
         [keyWindow addSubview:self];
-        if (_contentMode == AlertContentModeCenter) {
-            self.centerX = keyWindow.centerX;
-            self.centerY = keyWindow.centerY;
-        } else if (_contentMode == AlertContentModeBottom) {
-            self.centerY = keyWindow.centerY;
-            self.bottom = keyWindow.bottom;
-        }
+        [self mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
         _show = YES;
     }
 }
 
-- (void)hiddenFromKeyWindowWithAnimated:(BOOL)animated {
-    [self removeFromSuperview];
-    [self.maskView removeFromSuperview];
-    _show = NO;
-}
-
-- (void)showInView:(UIView *)view animated:(BOOL)animated {
+- (void)showInView:(UIView *)view {
     if (!self.isShow) {
-        [view addSubview:self.maskView];
         [view addSubview:self];
-        self.centerX = view.centerX;
-        self.centerY = view.centerY;
+        [self mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
         _show = YES;
     }
 }
 
-- (void)hiddenFromView:(UIView *)view animated:(BOOL)animated {
-    [self removeFromSuperview];
-    [self.maskView removeFromSuperview];
-    _show = NO;
-}
-
-//点击了背景图
-- (void)didClickMaskView {
+- (void)dismiss {
     [self hiddenFromSupperView];
-}
-
-#pragma mark - Lazy
-- (UIView *)maskView {
-    if (!_maskView) {
-        _maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,SCREEN_HEIGHT)];
-        _maskView.backgroundColor = [UIColor blackColor];
-        _maskView.alpha = 0.5;
-        [self addTapGesInView:_maskView];
-    }
-    return _maskView;
 }
 
 #pragma mark - Private Methods
@@ -82,6 +58,27 @@
     tap.numberOfTouchesRequired = 1;
     tap.numberOfTapsRequired = 1;
     [view addGestureRecognizer:tap];
+}
+
+- (void)hiddenFromSupperView {
+    _show = NO;
+    [self removeFromSuperview];
+    
+}
+
+- (void)didClickMaskView {
+    [self dismiss];
+}
+
+#pragma mark - Lazy
+- (UIView *)maskView {
+    if (!_maskView) {
+        _maskView = [[UIView alloc] init];
+        _maskView.backgroundColor = [UIColor blackColor];
+        _maskView.alpha = 0.6;
+        [self addTapGesInView:_maskView];
+    }
+    return _maskView;
 }
 
 @end

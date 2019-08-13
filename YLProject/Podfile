@@ -13,7 +13,7 @@ pod 'YTKNetwork', '~> 2.0.4'
 pod 'SDWebImage','~> 4.3.3'
 pod 'Masonry','~> 1.1.0'
 pod 'SVProgressHUD','~> 2.2.5'           #显示loading
-pod 'IQKeyboardManager','~> 6.0.2'       #键盘便宜
+pod 'IQKeyboardManager','~> 6.0.2'       #键盘偏移
 pod 'FMDB','~> 2.7.2'
 pod 'LKDBHelper', '~> 2.5.1'             #存储
 pod 'TYCyclePagerView','~> 1.1.0'        #卡片样式轮播
@@ -27,6 +27,16 @@ pod 'LBXScan', '~> 2.3'                  #扫一扫
 pod 'M13ProgressSuite', '~> 1.2.9'       #进度条
 pod 'ActionSheetPicker-3.0', '~> 2.3.0'  #时间选择器
 pod 'YLKits', '~> 0.0.1'                 #平时积累的库
+
+#友盟相关
+pod 'UMCCommon','~> 1.5.0'
+pod 'UMCCommonLog', '~> 1.0.0'
+pod 'UMCAnalytics', '~> 5.5.0'
+pod 'UMCSecurityPlugins','~> 1.0.6'
+pod 'UMCPush', '~> 3.2.1'
+pod 'UMCShare/Social/ReducedWeChat','~> 6.9.1'
+pod 'UMCShare/Social/ReducedQQ','~> 6.9.1'
+pod 'UMCShare/Social/ReducedSina','~> 6.9.1'
 
 #调试库
 pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'           #调试接口

@@ -30,8 +30,6 @@
 		13B6AA062261C8EA004B76D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA052261C8EA004B76D7 /* Assets.xcassets */; };
 		13B6AA092261C8EA004B76D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA072261C8EA004B76D7 /* LaunchScreen.storyboard */; };
 		13B6AA0C2261C8EA004B76D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA0B2261C8EA004B76D7 /* main.m */; };
-		13B6AA162261C8EA004B76D7 /* YLProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA152261C8EA004B76D7 /* YLProjectTests.m */; };
-		13B6AA212261C8EB004B76D7 /* YLProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA202261C8EB004B76D7 /* YLProjectUITests.m */; };
 		13B6AA422261C973004B76D7 /* YLBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA322261C973004B76D7 /* YLBaseNavigationController.m */; };
 		13B6AA432261C973004B76D7 /* YLBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA362261C973004B76D7 /* YLBaseAlertView.m */; };
 		13B6AA442261C973004B76D7 /* YLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6AA382261C973004B76D7 /* YLBaseViewController.m */; };
@@ -53,6 +51,7 @@
 		13B6AA912261CDE6004B76D7 /* commit-msg.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8E2261CDE5004B76D7 /* commit-msg.py */; };
 		13B6AA922261CDE6004B76D7 /* post-commit.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8F2261CDE6004B76D7 /* post-commit.py */; };
 		13CC8A7B2271495C00AE612E /* YLBasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */; };
+		13E8845223026AD90082694F /* YLUMSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E8845123026AD90082694F /* YLUMSDKManager.m */; };
 		A89D08432194D5B8F6EDA3F4 /* libPods-YLProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E67655B061F35E9A005F8E68 /* libPods-YLProject.a */; };
 /* End PBXBuildFile section */
 
@@ -123,11 +122,7 @@
 		13B6AA0A2261C8EA004B76D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B6AA0B2261C8EA004B76D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13B6AA112261C8EA004B76D7 /* YLProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B6AA152261C8EA004B76D7 /* YLProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProjectTests.m; sourceTree = "<group>"; };
-		13B6AA172261C8EB004B76D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B6AA1C2261C8EB004B76D7 /* YLProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B6AA202261C8EB004B76D7 /* YLProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProjectUITests.m; sourceTree = "<group>"; };
-		13B6AA222261C8EB004B76D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B6AA322261C973004B76D7 /* YLBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseNavigationController.m; sourceTree = "<group>"; };
 		13B6AA332261C973004B76D7 /* YLBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseNavigationController.h; sourceTree = "<group>"; };
 		13B6AA352261C973004B76D7 /* YLBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseAlertView.h; sourceTree = "<group>"; };
@@ -166,6 +161,8 @@
 		13B6AA8F2261CDE6004B76D7 /* post-commit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "post-commit.py"; sourceTree = "<group>"; };
 		13CC8A792271495C00AE612E /* YLBasePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBasePageViewController.h; sourceTree = "<group>"; };
 		13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBasePageViewController.m; sourceTree = "<group>"; };
+		13E8845023026AD90082694F /* YLUMSDKManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUMSDKManager.h; sourceTree = "<group>"; };
+		13E8845123026AD90082694F /* YLUMSDKManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLUMSDKManager.m; sourceTree = "<group>"; };
 		68A8D13C79DD89C51B69F737 /* Pods-YLProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.debug.xcconfig"; sourceTree = "<group>"; };
 		73A0FF6A0DA695ACF616EBE2 /* libPods-YLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		921B168F7F8E7D2A69933795 /* Pods-YLProject.pre.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.pre.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.pre.xcconfig"; sourceTree = "<group>"; };
@@ -327,8 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				13B6A9FB2261C8E7004B76D7 /* YLProject */,
-				13B6AA142261C8EA004B76D7 /* YLProjectTests */,
-				13B6AA1F2261C8EB004B76D7 /* YLProjectUITests */,
 				13B6A9FA2261C8E7004B76D7 /* Products */,
 				32E1654F5DFC196175A1A3DD /* Pods */,
 				E52EF06B3FAACE962887FBFE /* Frameworks */,
@@ -365,24 +360,6 @@
 				13B6AA0B2261C8EA004B76D7 /* main.m */,
 			);
 			path = YLProject;
-			sourceTree = "<group>";
-		};
-		13B6AA142261C8EA004B76D7 /* YLProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				13B6AA152261C8EA004B76D7 /* YLProjectTests.m */,
-				13B6AA172261C8EB004B76D7 /* Info.plist */,
-			);
-			path = YLProjectTests;
-			sourceTree = "<group>";
-		};
-		13B6AA1F2261C8EB004B76D7 /* YLProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				13B6AA202261C8EB004B76D7 /* YLProjectUITests.m */,
-				13B6AA222261C8EB004B76D7 /* Info.plist */,
-			);
-			path = YLProjectUITests;
 			sourceTree = "<group>";
 		};
 		13B6AA302261C973004B76D7 /* Base */ = {
@@ -544,6 +521,7 @@
 		13B6AA772261C9BC004B76D7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				13E8844F23026AA30082694F /* UMSDKManager */,
 				13B6AA782261C9BC004B76D7 /* DecimalNumber */,
 				13B6AA7D2261C9BC004B76D7 /* GetClassInfo */,
 			);
@@ -603,6 +581,15 @@
 			children = (
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		13E8844F23026AA30082694F /* UMSDKManager */ = {
+			isa = PBXGroup;
+			children = (
+				13E8845023026AD90082694F /* YLUMSDKManager.h */,
+				13E8845123026AD90082694F /* YLUMSDKManager.m */,
+			);
+			path = UMSDKManager;
 			sourceTree = "<group>";
 		};
 		32E1654F5DFC196175A1A3DD /* Pods */ = {
@@ -768,16 +755,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YLProject/Pods-YLProject-frameworks.sh",
-				"${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-YLProject/Pods-YLProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonLoadAnalyze.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-YLProject/Pods-YLProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -812,32 +794,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YLProject/Pods-YLProject-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+				"${PODS_ROOT}/Target Support Files/Pods-YLProject/Pods-YLProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+				"${PODS_ROOT}/Target Support Files/Pods-YLProject/Pods-YLProject-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -866,6 +827,7 @@
 				13B6AA432261C973004B76D7 /* YLBaseAlertView.m in Sources */,
 				13B6AA452261C973004B76D7 /* YLBaseTableViewController.m in Sources */,
 				13B6AA012261C8E7004B76D7 /* ViewController.m in Sources */,
+				13E8845223026AD90082694F /* YLUMSDKManager.m in Sources */,
 				13B6AA0C2261C8EA004B76D7 /* main.m in Sources */,
 				13063E0F22642F7D000F725E /* YLNetworkConfig.m in Sources */,
 				13B6A9FE2261C8E7004B76D7 /* AppDelegate.m in Sources */,
@@ -893,7 +855,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B6AA162261C8EA004B76D7 /* YLProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,7 +862,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B6AA212261C8EB004B76D7 /* YLProjectUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
