@@ -64,7 +64,8 @@ fprintf(stderr, "-------\n");                                               \
 #define isIPhoneXMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !isPad: NO)
 //iphoneX 系列
 #define isIPhoneXAll (isIPhoneX || isIPhoneXr || isIPhoneXMax)
-
+//下面安全距离
+#define ALBottomSafeMargin (isIPhoneXAll ?34 : 0)
 //屏幕大小
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

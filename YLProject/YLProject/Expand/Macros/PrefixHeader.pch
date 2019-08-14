@@ -22,6 +22,6 @@
 #import <YYText.h>
 #import <MJRefresh.h>
 #import <YYModel.h>
-#import <YLKit.h>
+#import "YLKit.h"
 
 #endif /* PrefixHeader_pch */

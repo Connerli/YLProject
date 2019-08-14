@@ -1,19 +1,22 @@
 //
-//  NSObject+ClassInfo.m
-//  PersonalProjects
+//  NSObject+YLKit.m
+//  YLProject
 //
-//  Created by Conner on 2017/9/25.
-//  Copyright © 2017年 Conner. All rights reserved.
+//  Created by Conner on 2019/8/14.
+//  Copyright © 2019 Conner. All rights reserved.
 //
 
-#import "NSObject+ClassInfo.h"
-#import <objc/runtime.h>
+#import "NSObject+YLKit.h"
 
-@implementation NSObject (ClassInfo)
+@implementation NSObject (YLKit)
+
+//类名
++ (NSString *)className {
+    return NSStringFromClass([self class]);
+}
 
 //获得所有变量
-+ (NSArray *)getAllIvar:(id)object
-{
++ (NSArray *)getAllIvar:(id)object {
     NSMutableArray *array = [NSMutableArray array];
     
     unsigned int count;
@@ -38,8 +41,7 @@
 }
 
 //获得所有属性
-+ (NSArray *)getAllProperty:(id)object
-{
++ (NSArray *)getAllProperty:(id)object {
     NSMutableArray *array = [NSMutableArray array];
     
     unsigned int count;
@@ -52,5 +54,4 @@
     }
     return [array copy];
 }
-
 @end
