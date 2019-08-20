@@ -60,6 +60,7 @@
 		13B6AA902261CDE6004B76D7 /* pre-commit.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8D2261CDE5004B76D7 /* pre-commit.py */; };
 		13B6AA912261CDE6004B76D7 /* commit-msg.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8E2261CDE5004B76D7 /* commit-msg.py */; };
 		13B6AA922261CDE6004B76D7 /* post-commit.py in Resources */ = {isa = PBXBuildFile; fileRef = 13B6AA8F2261CDE6004B76D7 /* post-commit.py */; };
+		13C0E09A23064AAF00934A34 /* UIImage+YLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0E09923064AAF00934A34 /* UIImage+YLKit.m */; };
 		13CC8A7B2271495C00AE612E /* YLBasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */; };
 		13E8845223026AD90082694F /* YLUMSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E8845123026AD90082694F /* YLUMSDKManager.m */; };
 		13E88458230298D70082694F /* YLShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E88457230298D70082694F /* YLShareView.m */; };
@@ -196,6 +197,8 @@
 		13B6AA8D2261CDE5004B76D7 /* pre-commit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "pre-commit.py"; sourceTree = "<group>"; };
 		13B6AA8E2261CDE5004B76D7 /* commit-msg.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "commit-msg.py"; sourceTree = "<group>"; };
 		13B6AA8F2261CDE6004B76D7 /* post-commit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "post-commit.py"; sourceTree = "<group>"; };
+		13C0E09823064AAF00934A34 /* UIImage+YLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YLKit.h"; sourceTree = "<group>"; };
+		13C0E09923064AAF00934A34 /* UIImage+YLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YLKit.m"; sourceTree = "<group>"; };
 		13CC8A792271495C00AE612E /* YLBasePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBasePageViewController.h; sourceTree = "<group>"; };
 		13CC8A7A2271495C00AE612E /* YLBasePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBasePageViewController.m; sourceTree = "<group>"; };
 		13E8845023026AD90082694F /* YLUMSDKManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUMSDKManager.h; sourceTree = "<group>"; };
@@ -362,6 +365,8 @@
 				13317D2D2303AA1B003F7C7A /* UIFont+YLKit.m */,
 				13317D2C2303AA1B003F7C7A /* UITableView+YLKit.h */,
 				13317D382303AA1B003F7C7A /* UITableView+YLKit.m */,
+				13C0E09823064AAF00934A34 /* UIImage+YLKit.h */,
+				13C0E09923064AAF00934A34 /* UIImage+YLKit.m */,
 				13317D2E2303AA1B003F7C7A /* UIView */,
 			);
 			path = Additions;
@@ -991,6 +996,7 @@
 				1309512B226DD9EA005E5961 /* YLRefreshTableView.m in Sources */,
 				13063E1D22646C37000F725E /* YLMainRootViewController.m in Sources */,
 				13063E2322646DE5000F725E /* YLHomeViewController.m in Sources */,
+				13C0E09A23064AAF00934A34 /* UIImage+YLKit.m in Sources */,
 				13E884622302A60E0082694F /* YLShareItemCell.m in Sources */,
 				13317D462303AA1B003F7C7A /* UIView+YLKit.m in Sources */,
 				13B6AA732261C9B4004B76D7 /* YLUserDefaults+Properties.m in Sources */,
@@ -1114,7 +1120,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1136,7 +1142,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1226,7 +1232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1248,7 +1254,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1343,7 +1349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1397,7 +1403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1419,7 +1425,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1439,7 +1445,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.YLProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

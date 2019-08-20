@@ -74,8 +74,11 @@
     
     [self loadStartedCallDelegate];
     
+#ifdef ENABLE_LOG
     NSString *requestUrl = [YLNetworkConfig URLStringWithBaseUrl:self.baseUrl requestUrl:self.requestUrl parameters:[self getAllParameters]];
     NSLog(@"%@",requestUrl);
+#endif
+    
 }
 
 - (void)fillModelWithDictionary:(NSDictionary *)dataDictionary {
@@ -238,6 +241,12 @@
 #pragma mark - YTKRequestDelegate
 - (void)requestFinished:(YTKBaseRequest *)request {
     self.everLoaded = YES;
+    if (self.refreshView) {
+        dispatch_main_async_safe(^{
+            [self.refreshView hidePlaceImageView];
+            [self.refreshView endRefreshSuccess:YES];
+        });
+    }
     // 1.empty data
     if ([NSString isEmpty:request.responseString]) {
         [self emptyDataCallBack];
@@ -294,11 +303,22 @@
     } else {
         [self showErrorMessageWithMsg:@"系统繁忙\n请稍后重试~"];
     }
+    
+    if (self.refreshView) {
+        dispatch_main_async_safe(^{
+            [self.refreshView hidePlaceImageView];
+            [self.refreshView endRefreshSuccess:NO];
+            if (isNetworkError) {
+                [self.refreshView showPlaceImageWithType:PlaceImageTypeNetworkLost];
+            }
+        });
+    }
+    
     [self loadFailedCallDelegateWithError:request.error];
     self.failBlock ? self.failBlock(request.error, isNetworkError):nil;
     
-    NSString *url = [NSString stringWithFormat:@"%@%@",self.baseUrl, self.requestUrl];
 #ifdef ENABLE_LOG
+    NSString *url = [NSString stringWithFormat:@"%@%@",self.baseUrl, self.requestUrl];
     NSLog(@"\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Server Unavailable nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
     NSLog(@"%@ %@", url, request.error);
 #endif

@@ -22,6 +22,15 @@
 
 @implementation YLRefreshTableView
 
+#pragma mark - Init
+- (instancetype)init {
+    return [self initWithFrame:CGRectZero style:UITableViewStylePlain];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    return ([self initWithFrame:frame style:UITableViewStylePlain]);
+}
+
 #pragma mark - Public
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     if (self = [super initWithFrame:frame]) {

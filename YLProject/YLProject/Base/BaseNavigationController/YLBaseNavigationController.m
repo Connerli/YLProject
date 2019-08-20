@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
     self.delegate = self;
     self.navigationBar.translucent = NO;
-    [self.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationBar setTintColor:[UIColor blackColor]];
     self.navigationBar.backgroundColor = [UIColor whiteColor];
     self.navigationBar.shadowImage = [[UIImage alloc] init];
     

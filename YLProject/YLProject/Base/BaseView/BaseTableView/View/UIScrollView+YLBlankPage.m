@@ -29,9 +29,9 @@ NSString *const textLine = @"textLine";
 
 @implementation UIScrollView (YLBlankPage)
 
-- (void)setPlaceImageTyp:(PlaceImageType)placeImageTyp
+- (void)setPlaceImageType:(PlaceImageType)placeImageType
 {
-    objc_setAssociatedObject(self, scrollview_placeimage_type_tag, @(placeImageTyp), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, scrollview_placeimage_type_tag, @(placeImageType), OBJC_ASSOCIATION_RETAIN);
 }
 
 - (PlaceImageType)placeImageType
@@ -70,7 +70,7 @@ NSString *const textLine = @"textLine";
     UIButton* button = (UIButton *)[self viewWithTag:PLACEIMAGE_BUTTON_TAG];
     if (!button || [self placeImageType] != type) {
         if ([self placeImageType] != type) {
-            self.placeImageTyp = type;
+            self.placeImageType = type;
         }
        
         if (button) {
@@ -213,7 +213,7 @@ NSString *const textLine = @"textLine";
         tipLabel.hidden = YES;
     }
     
-    self.placeImageTyp = PlaceImageTypeNone;
+    self.placeImageType = PlaceImageTypeNone;
 }
 
 - (void)p_placeImageClicked:(id)sender

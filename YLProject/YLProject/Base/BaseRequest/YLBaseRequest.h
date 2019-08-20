@@ -8,7 +8,7 @@
 
 #import <YTKRequest.h>
 #import "YLNetworkEntity.h"
-
+#import "YLRefreshTableView.h"
 
 #pragma mark - blcoks
 
@@ -51,6 +51,8 @@ typedef void(^RequestFailedBlock)(NSError *error, BOOL isNetworkError);
 @end
 
 @interface YLBaseRequest : YTKRequest
+///配合接口使用tableView  1.加载数据成功或失败停止刷新 2.隐藏占位图
+@property (nonatomic, weak)  YLRefreshTableView *refreshView;
 
 /** 获取请求状态改变的代理,block回调无需设值 */
 @property (nonatomic, weak) id <BaseRequestDelegate> requestDelegate;
