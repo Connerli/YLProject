@@ -100,6 +100,7 @@
 }
 
 - (void)startWithSuccessBlock:(RequestSuccessBlock)successBlock failedBlock:(RequestFailedBlock)failedBlock showWaitHub:(BOOL)isShowWaitHub {
+    [self reset];
     self.showLodingIndicator = isShowWaitHub;
     self.successBlock = successBlock;
     self.failBlock = failedBlock;
@@ -134,7 +135,10 @@
 - (void)reset {
     _networkEntity = nil;
     if (self.isExecuting) {
-        
+        [self stop];
+    }
+    if (self.showLodingIndicator) {
+        [YLProgressHUD dismiss];
     }
 }
 
@@ -280,15 +284,14 @@
         [YLProgressHUD dismiss];
     }
     
-    // 6.500为后端定义出错的code
-    if (self.networkEntity.code.integerValue == 500) {
+    // 6.后端定义出错的code 默认非零都弹提示
+    if (self.networkEntity.code.integerValue != 0) {
         [self showErrorMessageWithMsg:self.networkEntity.msg];
     }
     
     // 7.token失效code
-    if (self.networkEntity.code.integerValue == -100) {
+    if (self.networkEntity.code.integerValue == -2) {
         [self loginOut];
-        [self showErrorMessageWithMsg:self.networkEntity.msg];
     }
     
     // 8.正常数据

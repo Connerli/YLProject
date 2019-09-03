@@ -8,6 +8,7 @@
 
 #import "YLMainRootViewController.h"
 #import "YLMainTabbarController.h"
+#import "YLMainTabBarConfig.h"
 
 @interface YLMainRootViewController ()<UITabBarControllerDelegate,CYLTabBarControllerDelegate>
 
@@ -26,19 +27,14 @@
 }
 
 - (void)createNewTabBar {
-    YLMainTabBarController *tabBarController = [[YLMainTabBarController alloc] init];
-    tabBarController.delegate = self;
-    self.viewControllers = @[tabBarController];
+    [UIApplication sharedApplication].keyWindow.rootViewController = self.tabBarController;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITabBarController *)tabBarController {
+    if (!_tabBarController) {
+        _tabBarController = [YLMainTabBarConfig sharedInstance].tabBarController;
+    }
+    return _tabBarController;
 }
-*/
 
 @end

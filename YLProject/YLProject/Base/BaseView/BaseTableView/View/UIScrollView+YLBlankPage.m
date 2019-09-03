@@ -11,9 +11,9 @@
 
 #define PLACE_TIP_TITLE_FONT                    [UIFont systemFontOfSize:13]
 //color
-#define PLACE_TIP_TITLE_COLOR                   [UIColor colorWithHex:@"#666666" alpha:1]
+#define PLACE_TIP_TITLE_COLOR                   [UIColor hexString:@"#666666"]
 //高亮色
-#define PLACE_HIGHLIGHT_COLOR                   [UIColor colorWithHex:@"#333333" alpha:1]
+#define PLACE_HIGHLIGHT_COLOR                   [UIColor hexString:@"#333333"]
 //行间距
 #define PLACEIMAGE_LINE_SPACE                       6.f        //行间距
 #define PLACEIMAGE_BUTTON_TAG                       999000991  //按钮

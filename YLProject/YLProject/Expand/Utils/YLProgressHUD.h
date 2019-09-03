@@ -25,7 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
  *  隐藏HUD
  */
 + (void)dismiss;
-
+/**
+ 显示提示语 默认两秒
+ 
+ @param message 提示信息
+ */
++ (void)showTipWithMessage:(NSString *)message;
 /**
  显示成功HUD
  
@@ -55,12 +60,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)showWarningWithStatus:(NSString *)status;
 
 /**
- *  显示文本HUD
+ *  显示文本HUD 带进度条
  */
-+ (void)showWithStatus:(NSString*)status dismissTime:(double)times complete:(void(^)(void))complete;
-+ (void)showWithStatus:(NSString *)status maskType:(SVProgressHUDMaskType)maskType;
-+ (void)showWithMaskType:(SVProgressHUDMaskType)maskType;
 + (void)showWithStatus:(NSString*)status;
++ (void)showWithStatus:(NSString *)status dismissTime:(double)times;
++ (void)showWithStatus:(NSString*)status dismissTime:(double)times complete:(void(^)(void))complete;
 @end
 
 NS_ASSUME_NONNULL_END

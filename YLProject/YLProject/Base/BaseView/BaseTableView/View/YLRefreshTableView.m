@@ -34,7 +34,7 @@
 #pragma mark - Public
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     if (self = [super initWithFrame:frame]) {
-        _items = [[NSMutableArray alloc] init];
+        _items = [[NSArray alloc] init];
         _forwarder = [[CYRefreshDelegateForward alloc] init];
         _forwarder.tableView = self;
         

@@ -6,11 +6,11 @@
 //  Copyright © 2019年 Conner. All rights reserved.
 //
 
-#import "YLBaseViewController.h"
+#import "YLBaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLMeViewController : YLBaseViewController
+@interface YLMeViewController : YLBaseTableViewController
 
 @end
 

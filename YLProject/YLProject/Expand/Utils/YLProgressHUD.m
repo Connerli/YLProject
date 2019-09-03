@@ -16,8 +16,8 @@
     [SVProgressHUD setFont:[UIFont boldSystemFontOfSize:17]];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
     [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]];
+    [SVProgressHUD setMinimumSize:CGSizeMake(100, 100)];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
-    [SVProgressHUD setMinimumSize:CGSizeMake(119, 104)];
     [SVProgressHUD setCornerRadius:10];
 }
 
@@ -29,32 +29,43 @@
     [SVProgressHUD dismiss];
 }
 
++ (void)showTipWithMessage:(NSString *)message {
+    [SVProgressHUD showImage:[UIImage imageNamed:@""] status:message];
+    [self dismissDefaultDelay];
+}
+
 + (void)showSuccessWithStatus:(NSString *)status {
-    [SVProgressHUD showImage:[UIImage imageNamed:@"app_success"] status:status];
+    [SVProgressHUD showSuccessWithStatus:status];
+    [self dismissDefaultDelay];
 }
 
 + (void)showFailWithStatus:(NSString *)status {
-    [SVProgressHUD showImage:[UIImage imageNamed:@"app_fail"] status:status];
+    [SVProgressHUD showErrorWithStatus:status];
+    [self dismissDefaultDelay];
 }
 
 + (void)showWarningWithStatus:(NSString *)status {
-    [SVProgressHUD showImage:[UIImage imageNamed:@"app_notice"] status:status];
+    [SVProgressHUD showInfoWithStatus:status];
+    [self dismissDefaultDelay];
 }
 
 + (void)showErrorWithStatus:(NSString *)status {
-    [SVProgressHUD showImage:[UIImage imageNamed:@"app_cry"] status:status];
+    [SVProgressHUD showErrorWithStatus:status];
+    [self dismissDefaultDelay];
+}
+
++ (void)showWithStatus:(NSString*)status {
+    [SVProgressHUD showWithStatus:status];
+}
+
++ (void)showWithStatus:(NSString *)status dismissTime:(double)times {
+    [SVProgressHUD showWithStatus:status];
+    [SVProgressHUD dismissWithDelay:times];
 }
 
 + (void)showWithStatus:(NSString*)status dismissTime:(double)times complete:(void(^)(void))complete {
     [SVProgressHUD showWithStatus:status];
-    
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(times * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [SVProgressHUD dismiss];
-        if (complete) {
-            complete();
-        }
-    });
+    [SVProgressHUD dismissWithDelay:times completion:complete];
 }
 
 + (void)showWithStatus:(NSString *)status maskType:(SVProgressHUDMaskType)maskType {
@@ -67,7 +78,8 @@
     [SVProgressHUD setDefaultMaskType:maskType];
 }
 
-+ (void)showWithStatus:(NSString*)status {
-    [SVProgressHUD showWithStatus:status];
+
++ (void)dismissDefaultDelay {
+    [SVProgressHUD dismissWithDelay:2];
 }
 @end
