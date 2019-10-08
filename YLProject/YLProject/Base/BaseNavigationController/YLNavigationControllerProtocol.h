@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)navigationDidHideMeAndShowViewController:(UIViewController*)viewController;
 
 // return @YES to indicate that vc want to hide navigationbar
-- (NSNumber *)shouldHideNavigationBar;
+- (BOOL)shouldHideNavigationBar;
 @end
 
 NS_ASSUME_NONNULL_END

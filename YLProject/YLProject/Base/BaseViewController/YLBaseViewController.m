@@ -19,15 +19,31 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - YLNavigationControllerProtocol
+- (void)navigationWillShowMeAndHideViewController:(UIViewController *)viewController {
+    BOOL MeHide = [self shouldHideNavigationBar];
+    BOOL oldHide = NO;
+    
+    if (viewController && [viewController respondsToSelector:@selector(shouldHideNavigationBar)]) {
+        oldHide = [[viewController performSelector:@selector(shouldHideNavigationBar)] boolValue];
+    }
+    
+    if (oldHide && !MeHide) {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    }else if(!oldHide && MeHide){
+        if (viewController) {
+            [self.navigationController setNavigationBarHidden:YES animated:YES];
+        } else {
+            [self.navigationController setNavigationBarHidden:YES animated:NO];
+        }
+    }
 }
-*/
+
+- (BOOL)shouldHideNavigationBar {
+    return NO;
+}
+
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

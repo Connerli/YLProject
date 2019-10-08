@@ -12,5 +12,8 @@
 #import "NSString+YLKit.h"
 #import "NSArray+YLKit.h"
 #import "NSObject+YLKit.h"
+#import "NSDictionary+YLKit.h"
+#import "NSFileManager+YLKit.h"
+
 
 #endif /* YLFoundationHeader_h */
