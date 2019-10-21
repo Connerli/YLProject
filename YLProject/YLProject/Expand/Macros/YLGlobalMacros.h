@@ -53,6 +53,16 @@ fprintf(stderr, "-------\n");                                               \
 #endif
 #endif
 #endif
+
+//忽略performSelector 警告
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+    _Pragma("clang diagnostic push") \
+    _Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+    Stuff; \
+    _Pragma("clang diagnostic pop") \
+} while (0)
+
 //***************************屏幕的适配比例********************************
 #define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 #define isIPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,960), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
@@ -63,9 +73,10 @@ fprintf(stderr, "-------\n");                                               \
 #define isIPhoneXr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
 #define isIPhoneXMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !isPad: NO)
 //iphoneX 系列
-#define isIPhoneXAll (isIPhoneX || isIPhoneXr || isIPhoneXMax)
-//下面安全距离
-#define ALBottomSafeMargin (isIPhoneXAll ?34 : 0)
+#define IPHONE_X_SERIES ({BOOL isPhoneX = NO;if (@available(iOS 11.0, *)) {isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;}(isPhoneX);})
+//安全距离
+#define TOP_EXTRA (IPHONE_X_SERIES? 24.0f : 0.0f)
+#define BOTTOM_EXTRA (IPHONE_X_SERIES? 34.0f : 0.0f)
 //屏幕大小
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

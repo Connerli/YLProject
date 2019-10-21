@@ -20,13 +20,13 @@ pod 'TYCyclePagerView','~> 1.1.0'        #卡片样式轮播
 pod 'GVUserDefaults', '~> 1.0.2'         #userDefaults存储
 pod 'WebViewJavascriptBridge', '~> 6.0'  #网页桥接文件
 pod 'MJRefresh', '~> 3.1.16'             #刷新
-pod 'HHRouter', '~> 0.1.9'               #路由
+pod 'JLRoutes', '~> 2.1'                 #路由
 pod 'WMPageController', '~> 2.5.2'       #多列表页面
-pod 'CocoaLumberjack', '~> 3.5.2'        #日志库
 pod 'LBXScan', '~> 2.3'                  #扫一扫
 pod 'M13ProgressSuite', '~> 1.2.9'       #进度条
 pod 'ActionSheetPicker-3.0', '~> 2.3.0'  #时间选择器
-pod 'YLKits', '~> 0.0.2'
+pod 'YLKits', '~> 0.0.4'
+pod 'TZImagePickerController'            #图片选择器
 
 #友盟相关
 pod 'UMCCommon','~> 1.5.0'
@@ -39,12 +39,12 @@ pod 'UMCShare/Social/ReducedQQ','~> 6.9.1'
 pod 'UMCShare/Social/ReducedSina','~> 6.9.1'
 
 #调试库
-pod 'GYHttpMock', '~> 1.0.0', :configuration => 'Debug'           #调试接口
-pod 'YLControllerName', :configuration => 'Debug'                 #显示类名
-pod 'MLeaksFinder', :configuration => 'Debug'                     #检测内存泄漏
-pod 'DoraemonKit/Core', '~> 1.1.7', :configuration => 'Debug'     #调试模式
-pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configuration => 'Debug'
-pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configuration => 'Debug'
-pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configuration => 'Debug'
+pod 'GYHttpMock', '~> 1.0.0', :configuration => ['Debug']           #调试接口
+pod 'YLControllerName', :configuration => ['Debug']                 #显示类名
+pod 'MLeaksFinder', :configuration => ['Debug']                     #检测内存泄漏
+pod 'DoraemonKit/Core', '~> 1.1.7', :configuration => ['Debug']     #调试模式
+pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configuration => ['Debug']
+pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configuration => ['Debug']
+pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configuration => ['Debug']
     
 end

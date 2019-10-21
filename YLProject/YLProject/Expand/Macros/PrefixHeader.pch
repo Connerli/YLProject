@@ -10,6 +10,8 @@
 #define PrefixHeader_pch
 //宏
 #import "YLGlobalMacros.h"
+#import "APPInfoMacros.h"
+
 //分类
 #import "YLCategoryHeaders.h"
 //工具类

@@ -66,14 +66,14 @@ NSString *const textLine = @"textLine";
 
 - (void)showPlaceImageWithType:(PlaceImageType)type contentOffset:(CGPoint)offset
 {
+    //防止布局没完成调用了
+    [self layoutIfNeeded];
     //按钮+图片区域
     UIButton* button = (UIButton *)[self viewWithTag:PLACEIMAGE_BUTTON_TAG];
     if (!button || [self placeImageType] != type) {
-        if ([self placeImageType] != type) {
-            self.placeImageType = type;
-        }
+       self.placeImageType = type;
        
-        if (button) {
+       if (button) {
             button.hidden = NO;
             [self bringSubviewToFront:button];
             //设置按钮图片，设置按钮大小与未知

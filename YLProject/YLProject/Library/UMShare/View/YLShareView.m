@@ -36,7 +36,7 @@
             make.top.equalTo(nameLabel.mas_bottom).offset(6);
             make.left.equalTo(self);
             make.width.equalTo(self);
-            make.height.equalTo(self.mas_height).offset(-(110 + ALBottomSafeMargin));
+            make.height.equalTo(self.mas_height).offset(-(110 + BOTTOM_EXTRA));
         }];
         
         UIView *lineView = [[UIView alloc] init];
@@ -59,7 +59,7 @@
             make.top.equalTo(lineView.mas_bottom);
             make.left.equalTo(self);
             make.width.equalTo(self);
-            make.bottom.equalTo(@(-ALBottomSafeMargin));
+            make.bottom.equalTo(@(-BOTTOM_EXTRA));
         }];
         
         if (self.array.count <= 4) {

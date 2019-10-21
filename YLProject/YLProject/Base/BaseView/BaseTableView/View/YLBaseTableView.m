@@ -23,7 +23,7 @@
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     self = [super initWithFrame:frame style:style];
     if(self) {
-        self.isAdjustContentInset = YES;
+        self.isAdjustContentInset = NO;
         [self adaptive_iOS_11];
     }
     return (self);

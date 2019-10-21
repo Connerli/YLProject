@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.modalPresentationStyle = UIModalPresentationFullScreen;
+    
 }
 
 
@@ -26,7 +29,7 @@
     BOOL oldHide = NO;
     
     if (viewController && [viewController respondsToSelector:@selector(shouldHideNavigationBar)]) {
-        oldHide = [[viewController performSelector:@selector(shouldHideNavigationBar)] boolValue];
+        oldHide = [viewController performSelector:@selector(shouldHideNavigationBar)];
     }
     
     if (oldHide && !MeHide) {

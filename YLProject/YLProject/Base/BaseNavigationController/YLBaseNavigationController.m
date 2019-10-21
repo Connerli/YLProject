@@ -26,6 +26,22 @@
     
 }
 
+#pragma mark - Public
++ (UIBarButtonItem *)backBarButtonItemWithTarget:(id)target selector:(SEL)selector {
+    UIImage *image = [[UIImage imageNamed:@"back_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:target action:selector];
+    return leftButtonItem;
+}
+
+#pragma mark - Private
+- (void)setBackItem:(UIViewController *)viewController {
+     viewController.navigationItem.leftBarButtonItem = [YLBaseNavigationController backBarButtonItemWithTarget:self selector:@selector(popViewController)];
+}
+
+- (void)popViewController {
+    [self popViewControllerAnimated:YES];
+}
+
 #pragma mark - Super Method
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count > 0) {

@@ -57,6 +57,7 @@
 		13E8845C230299270082694F /* YLShareItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E8845B230299270082694F /* YLShareItemModel.m */; };
 		13E8845F230299460082694F /* YLShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E8845E230299460082694F /* YLShareManager.m */; };
 		13E884622302A60E0082694F /* YLShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E884612302A60E0082694F /* YLShareItemCell.m */; };
+		13FB805C235DA7D700026AD2 /* YLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FB805B235DA7D700026AD2 /* YLRoutes.m */; };
 		A89D08432194D5B8F6EDA3F4 /* libPods-YLProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E67655B061F35E9A005F8E68 /* libPods-YLProject.a */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,9 @@
 		13E8845E230299460082694F /* YLShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLShareManager.m; sourceTree = "<group>"; };
 		13E884602302A60E0082694F /* YLShareItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLShareItemCell.h; sourceTree = "<group>"; };
 		13E884612302A60E0082694F /* YLShareItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLShareItemCell.m; sourceTree = "<group>"; };
+		13EC659A2356CD2000960EC6 /* APPInfoMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPInfoMacros.h; sourceTree = "<group>"; };
+		13FB805A235DA7D700026AD2 /* YLRoutes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRoutes.h; sourceTree = "<group>"; };
+		13FB805B235DA7D700026AD2 /* YLRoutes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRoutes.m; sourceTree = "<group>"; };
 		68A8D13C79DD89C51B69F737 /* Pods-YLProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.debug.xcconfig"; sourceTree = "<group>"; };
 		73A0FF6A0DA695ACF616EBE2 /* libPods-YLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		921B168F7F8E7D2A69933795 /* Pods-YLProject.pre.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLProject.pre.xcconfig"; path = "Pods/Target Support Files/Pods-YLProject/Pods-YLProject.pre.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 		13A84571226587280023F5ED /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				13FB8059235DA71300026AD2 /* Router */,
 				13A84572226587900023F5ED /* MJDIYView */,
 			);
 			path = Custom;
@@ -532,6 +537,7 @@
 			children = (
 				13B6AA6A2261C9B4004B76D7 /* YLGlobalMacros.h */,
 				13B6AA6B2261C9B4004B76D7 /* PrefixHeader.pch */,
+				13EC659A2356CD2000960EC6 /* APPInfoMacros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -638,6 +644,15 @@
 				13E8845B230299270082694F /* YLShareItemModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		13FB8059235DA71300026AD2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				13FB805A235DA7D700026AD2 /* YLRoutes.h */,
+				13FB805B235DA7D700026AD2 /* YLRoutes.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		32E1654F5DFC196175A1A3DD /* Pods */ = {
@@ -821,6 +836,7 @@
 				13063E0F22642F7D000F725E /* YLNetworkConfig.m in Sources */,
 				13B6A9FE2261C8E7004B76D7 /* AppDelegate.m in Sources */,
 				13A84575226588060023F5ED /* YLDIYRefreshHeader.m in Sources */,
+				13FB805C235DA7D700026AD2 /* YLRoutes.m in Sources */,
 				13095127226DD9EA005E5961 /* YLBaseCell.m in Sources */,
 				138FC4482282C0C800BCFA14 /* YLDiscoverViewController.m in Sources */,
 				13B6AA762261C9B4004B76D7 /* YLConstNotification.m in Sources */,
