@@ -10,15 +10,20 @@
 
 
 @implementation YLProgressHUD
+
++ (void)load {
+    [self configDefaultStyle];
+}
+
 + (void)configDefaultStyle {
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
-    [SVProgressHUD setMinimumDismissTimeInterval:1];
-    [SVProgressHUD setFont:[UIFont boldSystemFontOfSize:17]];
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]];
-    [SVProgressHUD setMinimumSize:CGSizeMake(100, 100)];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
-    [SVProgressHUD setCornerRadius:10];
+     [SVProgressHUD setMinimumDismissTimeInterval:1];
+     [SVProgressHUD setFont:[UIFont boldSystemFontOfSize:17]];
+     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+     [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]];
+     [SVProgressHUD setMinimumSize:CGSizeMake(100, 30)];
+     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+     [SVProgressHUD setCornerRadius:10];
 }
 
 + (void)show {

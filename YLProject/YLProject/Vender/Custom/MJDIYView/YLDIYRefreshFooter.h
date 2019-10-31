@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLDIYRefreshFooter : MJRefreshAutoFooter
+@interface YLDIYRefreshFooter : MJRefreshAutoNormalFooter
 
 @end
 

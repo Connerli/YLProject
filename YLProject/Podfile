@@ -26,7 +26,7 @@ pod 'LBXScan', '~> 2.3'                  #扫一扫
 pod 'M13ProgressSuite', '~> 1.2.9'       #进度条
 pod 'ActionSheetPicker-3.0', '~> 2.3.0'  #时间选择器
 pod 'YLKits', '~> 0.0.4'
-pod 'TZImagePickerController'            #图片选择器
+pod 'TZImagePickerController', '~> 3.2.5'#图片选择器
 
 #友盟相关
 pod 'UMCCommon','~> 1.5.0'

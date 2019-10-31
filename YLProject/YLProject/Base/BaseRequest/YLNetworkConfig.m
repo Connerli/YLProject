@@ -34,6 +34,9 @@
     // TODO:通过 keyPath 设置的值，需要注意三方库有么有改这个字段
     YTKNetworkAgent *networkAgent = [YTKNetworkAgent sharedAgent];
     [networkAgent setValue:config.securityPolicy forKeyPath:@"manager.securityPolicy"];
+    NSSet *contentTypeSet = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json",@"text/html",@"text/css", nil];
+    [networkAgent setValue:contentTypeSet forKeyPath:@"jsonResponseSerializer.acceptableContentTypes"];
+
 }
 
 - (AFSecurityPolicy *)customSecurityPolicy {

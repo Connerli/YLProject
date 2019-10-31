@@ -250,6 +250,7 @@
     
     if ([cell isKindOfClass:[YLBaseCell class]]) {
         YLBaseCell *tempCell = (YLBaseCell *)cell;
+        tempCell.delegate = self.outSideDelegate;
         [tempCell setModel:object];
         tempCell.indexPath = indexPath;
     }

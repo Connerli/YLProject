@@ -81,10 +81,12 @@ do { \
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 //iphone6 为基础设备 屏幕适配
+#define iPhone6Size             CGSizeMake(750,1334)
+#define AL_SCREEN_SCALE         [UIScreen mainScreen].scale
 #define DefaultDeviceSize       iPhone6Size
 #define ALLineHeight(...)       ((__VA_ARGS__) / AL_SCREEN_SCALE)
-#define ALRectWidth(...)        ((__VA_ARGS__) * AL_SCREEN_WIDTH / DefaultDeviceSize.width)
-#define ALRectHeight(...)       ((__VA_ARGS__) * AL_SCREEN_HEIGHT / DefaultDeviceSize.height)
+#define ALRectWidth(...)        ((__VA_ARGS__) * SCREEN_WIDTH / DefaultDeviceSize.width)
+#define ALRectHeight(...)       ((__VA_ARGS__) * SCREEN_HEIGHT / DefaultDeviceSize.height)
 //字体适配
 #define ALFont(s)               [UIFont systemFontOfSize:(s) * AL_SCREEN_WIDTH / DefaultDeviceSize.width]
 #define ALBoldFont(s)           [UIFont boldSystemFontOfSize:(s) * AL_SCREEN_WIDTH / DefaultDeviceSize.width]

@@ -35,7 +35,7 @@
 }
 
 + (CGFloat)tableView:(UITableView *)tableView rowHeightForItem:(YLBaseCellModel *)model {
-    return 0.f;
+    return UITableViewAutomaticDimension;
 }
 
 @end
