@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- 收到推送消息
+ 收到推送消息iOS10 之前调用
  
  @param userInfo 用户信息
  */

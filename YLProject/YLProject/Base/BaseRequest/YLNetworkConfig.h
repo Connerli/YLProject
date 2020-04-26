@@ -19,8 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)startMonitoring;
 /** 全局参数，比如AppVersion, ApiVersion等 */
 + (NSDictionary *)globalParameters;
-/** 手机型号 信息 */
-+ (NSString *)mobileModel;
+
 /**
  将请求的数据转成 get url 链接
  @param baseUrl 主域名

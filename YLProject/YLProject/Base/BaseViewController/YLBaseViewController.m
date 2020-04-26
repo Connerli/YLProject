@@ -22,27 +22,6 @@
     
 }
 
-
-#pragma mark - YLNavigationControllerProtocol
-- (void)navigationWillShowMeAndHideViewController:(UIViewController *)viewController {
-    BOOL MeHide = [self shouldHideNavigationBar];
-    BOOL oldHide = NO;
-    
-    if (viewController && [viewController respondsToSelector:@selector(shouldHideNavigationBar)]) {
-        oldHide = [viewController performSelector:@selector(shouldHideNavigationBar)];
-    }
-    
-    if (oldHide && !MeHide) {
-        [self.navigationController setNavigationBarHidden:NO animated:YES];
-    }else if(!oldHide && MeHide){
-        if (viewController) {
-            [self.navigationController setNavigationBarHidden:YES animated:YES];
-        } else {
-            [self.navigationController setNavigationBarHidden:YES animated:NO];
-        }
-    }
-}
-
 - (BOOL)shouldHideNavigationBar {
     return NO;
 }

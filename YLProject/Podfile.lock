@@ -16,39 +16,50 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - BSBacktraceLogger (0.0.1)
-  - CocoaLumberjack (3.6.0):
-    - CocoaLumberjack/Core (= 3.6.0)
-  - CocoaLumberjack/Core (3.6.0)
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
   - CYLTabBarController (1.17.23)
-  - DoraemonKit/Core (1.1.7):
+  - DoraemonKit/Core (2.0.0):
     - BSBacktraceLogger
     - fishhook
-    - PNChart
-    - "UITextView+Placeholder"
-  - DoraemonKit/WithGPS (1.1.7):
+  - DoraemonKit/WithDatabase (2.0.0):
     - BSBacktraceLogger
     - DoraemonKit/Core
     - fishhook
-    - PNChart
-    - "UITextView+Placeholder"
-  - DoraemonKit/WithLoad (1.1.7):
+    - YYDebugDatabase
+  - DoraemonKit/WithGPS (2.0.0):
     - BSBacktraceLogger
     - DoraemonKit/Core
     - fishhook
-    - PNChart
-    - "UITextView+Placeholder"
-  - DoraemonKit/WithLogger (1.1.7):
+  - DoraemonKit/WithLoad (2.0.0):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+  - DoraemonKit/WithLogger (2.0.0):
     - BSBacktraceLogger
     - CocoaLumberjack
     - DoraemonKit/Core
     - fishhook
-    - PNChart
-    - "UITextView+Placeholder"
+  - DoraemonKit/WithMLeaksFinder (2.0.0):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - FBRetainCycleDetector
+    - fishhook
+  - DoraemonKit/WithWeex (2.0.0):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - WeexSDK
+    - WXDevtool
   - FBRetainCycleDetector (0.1.4)
   - fishhook (0.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - GCDWebServer (3.5.3):
+    - GCDWebServer/Core (= 3.5.3)
+  - GCDWebServer/Core (3.5.3)
   - GVUserDefaults (1.0.2)
   - GYHttpMock (1.0.1)
   - IQKeyboardManager (6.0.6)
@@ -66,18 +77,15 @@ PODS:
   - M13ProgressSuite (1.2.9)
   - Masonry (1.1.0)
   - MJRefresh (3.1.16)
-  - MLeaksFinder (1.0.0):
-    - FBRetainCycleDetector
-  - PNChart (0.8.9):
-    - UICountingLabel (~> 1.2.0)
-  - SDWebImage (4.3.3):
-    - SDWebImage/Core (= 4.3.3)
-  - SDWebImage/Core (4.3.3)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+  - SocketRocket (0.5.1)
   - SVProgressHUD (2.2.5)
   - TYCyclePagerView (1.1.2)
   - TZImagePickerController (3.2.5)
-  - UICountingLabel (1.2.0)
-  - "UITextView+Placeholder (1.2.1)"
   - UMCAnalytics (5.5.4):
     - UMCCommon
   - UMCCommon (1.5.3)
@@ -96,8 +104,11 @@ PODS:
   - UMCShare/Social/ReducedWeChat (6.9.5):
     - UMCCommon
     - UMCShare/Core
-  - WebViewJavascriptBridge (6.0.3)
+  - WeexSDK (0.28.0)
   - WMPageController (2.5.2)
+  - WXDevtool (0.24.0):
+    - SocketRocket
+    - WeexSDK
   - YLControllerName (0.0.3)
   - YLKits (0.0.4):
     - YLKits/Foundation (= 0.0.4)
@@ -107,6 +118,9 @@ PODS:
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYCache (1.0.4)
+  - YYDebugDatabase (2.0.7):
+    - FMDB
+    - GCDWebServer
   - YYModel (1.0.4)
   - YYText (1.0.7)
   - ZBarSDK (1.3.1)
@@ -114,10 +128,13 @@ PODS:
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.3.0)
   - CYLTabBarController (~> 1.17.7)
-  - DoraemonKit/Core (~> 1.1.7)
-  - DoraemonKit/WithGPS (~> 1.1.7)
-  - DoraemonKit/WithLoad (~> 1.1.7)
-  - DoraemonKit/WithLogger (~> 1.1.7)
+  - DoraemonKit/Core (~> 2.0.0)
+  - DoraemonKit/WithDatabase (~> 2.0.0)
+  - DoraemonKit/WithGPS (~> 2.0.0)
+  - DoraemonKit/WithLoad (~> 2.0.0)
+  - DoraemonKit/WithLogger (~> 2.0.0)
+  - DoraemonKit/WithMLeaksFinder (= 2.0.0)
+  - DoraemonKit/WithWeex (~> 2.0.0)
   - FMDB (~> 2.7.2)
   - GVUserDefaults (~> 1.0.2)
   - GYHttpMock (~> 1.0.0)
@@ -128,11 +145,11 @@ DEPENDENCIES:
   - M13ProgressSuite (~> 1.2.9)
   - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.1.16)
-  - MLeaksFinder
-  - SDWebImage (~> 4.3.3)
+  - SDCycleScrollView (~> 1.80)
+  - SDWebImage (~> 5.5.2)
   - SVProgressHUD (~> 2.2.5)
   - TYCyclePagerView (~> 1.1.0)
-  - TZImagePickerController
+  - TZImagePickerController (~> 3.2.5)
   - UMCAnalytics (~> 5.5.0)
   - UMCCommon (~> 1.5.0)
   - UMCCommonLog (~> 1.0.0)
@@ -141,7 +158,6 @@ DEPENDENCIES:
   - UMCShare/Social/ReducedQQ (~> 6.9.1)
   - UMCShare/Social/ReducedSina (~> 6.9.1)
   - UMCShare/Social/ReducedWeChat (~> 6.9.1)
-  - WebViewJavascriptBridge (~> 6.0)
   - WMPageController (~> 2.5.2)
   - YLControllerName
   - YLKits (~> 0.0.4)
@@ -151,60 +167,61 @@ DEPENDENCIES:
   - YYText (~> 1.0.7)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - ActionSheetPicker-3.0
     - AFNetworking
     - BSBacktraceLogger
+    - CocoaLumberjack
     - CYLTabBarController
     - DoraemonKit
     - FBRetainCycleDetector
     - fishhook
     - FMDB
+    - GCDWebServer
     - GVUserDefaults
     - GYHttpMock
     - IQKeyboardManager
+    - JLRoutes
     - LBXScan
     - LKDBHelper
     - M13ProgressSuite
     - Masonry
     - MJRefresh
-    - MLeaksFinder
-    - PNChart
+    - SDCycleScrollView
     - SDWebImage
+    - SocketRocket
     - SVProgressHUD
     - TYCyclePagerView
-    - UICountingLabel
-    - "UITextView+Placeholder"
+    - TZImagePickerController
     - UMCAnalytics
     - UMCCommon
     - UMCCommonLog
     - UMCPush
     - UMCSecurityPlugins
     - UMCShare
-    - WebViewJavascriptBridge
+    - WeexSDK
     - WMPageController
+    - WXDevtool
     - YLControllerName
+    - YLKits
     - YTKNetwork
     - YYCache
+    - YYDebugDatabase
     - YYModel
     - YYText
     - ZBarSDK
-  trunk:
-    - CocoaLumberjack
-    - JLRoutes
-    - TZImagePickerController
-    - YLKits
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
-  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   CYLTabBarController: 73889c1ccc7685221d85ac2dbf188900543f17d0
-  DoraemonKit: 0ac105ce8924477c22c57cc303798c04ab3c4dcd
+  DoraemonKit: 9e923599e28d0b61f1c6de4aef2c2d669b30abb7
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GCDWebServer: c0ab22c73e1b84f358d1e2f74bf6afd1c60829f2
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   GYHttpMock: ad08e55ce8bde4e7f7b4d0cbc79ff23c1311658b
   IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
@@ -214,30 +231,30 @@ SPEC CHECKSUMS:
   M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
-  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
-  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TYCyclePagerView: 0f67b0986995fd614843e819bc974cadd7f98008
   TZImagePickerController: 17440009643a472aa91e8af3b54d05091b152f0a
-  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
-  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   UMCAnalytics: 8449e33b7627ee26f1169202827a8d5a00b5442b
   UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
-  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  WeexSDK: 78861d2f8b78f67e30580c15a54f5b420456db39
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+  WXDevtool: 95b70c73c06fc3299d65bd53ba4b3e0b0087f3cb
   YLControllerName: 31f3062a6e18326c5263669128a6abe4077b94bb
   YLKits: 25a1ea2a9938e5479db7d4d01957ee20f17bb977
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYDebugDatabase: c8be8bd85222cc2ced76e93ca06618bab87224d7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 2c1dfa5f0159d43ec9d20b3a1795cf9c3729433b
+PODFILE CHECKSUM: dd9d52752597c8c9afe33efc45784270dcce5026
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.0

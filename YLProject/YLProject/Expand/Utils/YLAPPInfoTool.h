@@ -15,24 +15,27 @@ NS_ASSUME_NONNULL_BEGIN
  获取应用名
  @return 应用名
  */
-+ (NSString *)getAppDisplayName;
++ (NSString *)appDisplayName;
 /**
  获取应用版本号
  @return 版本号
  */
-+ (NSString *)getAppVersion;
++ (NSString *)appVersion;
 
 /**
  获取应用build 版本
  @return build 版本
  */
-+ (NSString *)getAppBuildNumber;
++ (NSString *)appBuildNumber;
 
 /**
  ipa 构建时间
  @return 时间
  */
-+ (NSString *)getIpaBuildTime;
++ (NSString *)ipaBuildTime;
+
+/// 手机系统版本
++ (NSString *)systemVersion;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -91,6 +91,7 @@
 - (void)handleUMMessage:(NSDictionary *)launchOptions {
     // 不显示sdk push 弹框
     [UMessage setAutoAlert:NO];
+    [UMessage setBadgeClear:YES];
     
     // Push组件基本功能配置
     UMessageRegisterEntity * entity = [[UMessageRegisterEntity alloc] init];

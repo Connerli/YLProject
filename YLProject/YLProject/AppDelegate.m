@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YLMainRootViewController.h"
 #import "YLNetworkConfig.h"
+#import "YLUMSDKManager.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,8 @@
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
     [self.window makeKeyAndVisible];
-
+    //推送
+    [[YLUMSDKManager sharedInstance] configUMSdk:launchOptions];
     // 网络请求配置和网络状态监听
     [[YLNetworkConfig sharedInstance] configNetwork];
     [[YLNetworkConfig sharedInstance] startMonitoring];
@@ -60,5 +62,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark -推送
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    if (![deviceToken isKindOfClass:[NSData class]]) return;
+    const unsigned *tokenBytes = (const unsigned *)[deviceToken bytes];
+    NSString *hexToken = [NSString stringWithFormat:@"%08x%08x%08x%08x%08x%08x%08x%08x",
+                          ntohl(tokenBytes[0]), ntohl(tokenBytes[1]), ntohl(tokenBytes[2]),
+                          ntohl(tokenBytes[3]), ntohl(tokenBytes[4]), ntohl(tokenBytes[5]),
+                          ntohl(tokenBytes[6]), ntohl(tokenBytes[7])];
+    NSLog(@"deviceToken:%@",hexToken);
+}
+
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    [[YLUMSDKManager sharedInstance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+}
 
 @end

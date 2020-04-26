@@ -2,15 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>功能包</string>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -27,27 +22,15 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
+	<key>NFCReaderUsageDescription</key>
+	<string>$(PRODUCT_NAME)需要您的同意,才能访问NFC</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>$(PRODUCT_NAME)需要您的同意,才能访问媒体资料库</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问蓝牙</string>
 	<key>NSCalendarsUsageDescription</key>
@@ -64,20 +47,16 @@
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问健康更新 </string>
 	<key>NSHomeKitUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问住宅配件 </string>
-	<key>NSLocationUsageDescription</key>
-	<string>$(PRODUCT_NAME)需要您的同意,才能访问位置</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能始终访问位置</string>
+	<key>NSLocationUsageDescription</key>
+	<string>$(PRODUCT_NAME)需要您的同意,才能访问位置</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能在使用期间访问位置</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问麦克风</string>
 	<key>NSMotionUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问运动与健身</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>$(PRODUCT_NAME)需要您的同意,才能访问媒体资料库</string>
-	<key>NFCReaderUsageDescription</key>
-	<string>$(PRODUCT_NAME)需要您的同意,才能访问NFC</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问相册</string>
 	<key>NSRemindersUsageDescription</key>
@@ -88,5 +67,28 @@
 	<string>$(PRODUCT_NAME)需要您的同意,才能使用语音识别功能</string>
 	<key>NSVideoSubscriberAccountUsageDescription</key>
 	<string>$(PRODUCT_NAME)需要您的同意,才能访问电视提供商</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 //
 
 #import "YLProgressHUD.h"
-
+#import <SVProgressHUD.h>
 
 @implementation YLProgressHUD
 

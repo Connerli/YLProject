@@ -245,12 +245,7 @@
 #pragma mark - YTKRequestDelegate
 - (void)requestFinished:(YTKBaseRequest *)request {
     self.everLoaded = YES;
-    if (self.refreshView) {
-        dispatch_main_async_safe(^{
-            [self.refreshView hidePlaceImageView];
-            [self.refreshView endRefreshSuccess:YES];
-        });
-    }
+
     // 1.empty data
     if ([NSString isEmpty:request.responseString]) {
         [self emptyDataCallBack];
@@ -307,15 +302,6 @@
         [self showErrorMessageWithMsg:@"系统繁忙\n请稍后重试~"];
     }
     
-    if (self.refreshView) {
-        dispatch_main_async_safe(^{
-            [self.refreshView hidePlaceImageView];
-            [self.refreshView endRefreshSuccess:NO];
-            if (isNetworkError) {
-                [self.refreshView showPlaceImageWithType:PlaceImageTypeNetworkLost];
-            }
-        });
-    }
     
     [self loadFailedCallDelegateWithError:request.error];
     self.failBlock ? self.failBlock(request.error, isNetworkError):nil;

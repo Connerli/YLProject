@@ -97,6 +97,7 @@
 		133BF905227EBB290052AC24 /* YLNetworkEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNetworkEntity.m; sourceTree = "<group>"; };
 		133BF908227EBCE80052AC24 /* YLProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLProgressHUD.h; sourceTree = "<group>"; };
 		133BF909227EBCE80052AC24 /* YLProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLProgressHUD.m; sourceTree = "<group>"; };
+		13705D6E2417720200DE2011 /* 小项目.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "小项目.entitlements"; sourceTree = "<group>"; };
 		138FC43E2282AA8000BCFA14 /* YLConstAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLConstAPI.h; sourceTree = "<group>"; };
 		138FC43F2282AA8000BCFA14 /* YLConstAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLConstAPI.m; sourceTree = "<group>"; };
 		138FC4462282C0C800BCFA14 /* YLDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDiscoverViewController.h; sourceTree = "<group>"; };
@@ -196,14 +197,14 @@
 			path = BaseTabbarController;
 			sourceTree = "<group>";
 		};
-		13063E1522646A51000F725E /* Interface */ = {
+		13063E1522646A51000F725E /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				138FC4412282AC1800BCFA14 /* Discover */,
 				13063E1722646A75000F725E /* Me */,
 				13063E1622646A6F000F725E /* Home */,
 			);
-			path = Interface;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		13063E1622646A6F000F725E /* Home */ = {
@@ -374,6 +375,7 @@
 		13B6A9FB2261C8E7004B76D7 /* YLProject */ = {
 			isa = PBXGroup;
 			children = (
+				13705D6E2417720200DE2011 /* 小项目.entitlements */,
 				13B6AA302261C973004B76D7 /* Base */,
 				13B6AA942261EBC7004B76D7 /* Resource */,
 				13B6AA932261EBBC004B76D7 /* Vender */,
@@ -466,7 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				1317EB6D231A1C79004991A5 /* Functions */,
-				13063E1522646A51000F725E /* Interface */,
+				13063E1522646A51000F725E /* Main */,
 				13B6AA8C2261CDD5004B76D7 /* GitHooks */,
 				13B6AA832261C9EF004B76D7 /* Fastlane */,
 			);
@@ -947,11 +949,12 @@
 			baseConfigurationReference = ADAEB83A1C30751882E633A1 /* Pods-YLProject.test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YLProject/小项目.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49ENPVW3M9;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = YLProject/Expand/Macros/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLProject/Expand/Macros/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -962,8 +965,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "小项目";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Test;
 		};
@@ -1027,11 +1030,12 @@
 			baseConfigurationReference = 921B168F7F8E7D2A69933795 /* Pods-YLProject.pre.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YLProject/小项目.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49ENPVW3M9;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = YLProject/Expand/Macros/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLProject/Expand/Macros/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1042,8 +1046,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "小项目";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Pre;
 		};
@@ -1166,11 +1170,12 @@
 			baseConfigurationReference = 68A8D13C79DD89C51B69F737 /* Pods-YLProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YLProject/小项目.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49ENPVW3M9;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = YLProject/Expand/Macros/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLProject/Expand/Macros/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1181,8 +1186,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "小项目";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1191,11 +1196,12 @@
 			baseConfigurationReference = BFF832DC22E3F7961799F90A /* Pods-YLProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YLProject/小项目.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49ENPVW3M9;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = YLProject/Expand/Macros/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLProject/Expand/Macros/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1206,8 +1212,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conner.project;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "小项目";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

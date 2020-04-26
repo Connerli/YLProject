@@ -62,6 +62,11 @@
         [viewController performSelector:@selector(navigationWillShowMeAndHideViewController:) withObject:self.lastTopViewController];
     }
     
+    /**处理导航栏显示隐藏*/
+    if ([viewController respondsToSelector:@selector(shouldHideNavigationBar)]) {
+        BOOL MeHide = [viewController performSelector:@selector(shouldHideNavigationBar)];
+        [viewController.navigationController setNavigationBarHidden:MeHide animated:animated];
+    }
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {

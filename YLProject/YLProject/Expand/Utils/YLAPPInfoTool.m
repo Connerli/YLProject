@@ -9,22 +9,23 @@
 #import "YLAPPInfoTool.h"
 
 @implementation YLAPPInfoTool
-+ (NSString *)getAppDisplayName {
+
++ (NSString *)appDisplayName {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     return [infoDictionary objectForKey:@"CFBundleDisplayName"];
 }
 
-+ (NSString *)getAppVersion {
++ (NSString *)appVersion {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     return [infoDictionary objectForKey:@"CFBundleShortVersionString"];
 }
 
-+ (NSString *)getAppBuildNumber {
++ (NSString *)appBuildNumber {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     return [infoDictionary objectForKey:@"CFBundleVersion"];
 }
 
-+ (NSString *)getIpaBuildTime
++ (NSString *)ipaBuildTime
 {
     NSString *buildDate = [NSString stringWithFormat:@"%s %s",__DATE__, __TIME__];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -35,4 +36,7 @@
     return dateString;
 }
 
++ (NSString *)systemVersion {
+    return [[UIDevice currentDevice] systemVersion];
+}
 @end

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B6A9F82261C8E7004B76D7"
-               BuildableName = "YLProject.app"
+               BuildableName = "&#x5c0f;&#x9879;&#x76ee;.app"
                BlueprintName = "YLProject"
                ReferencedContainer = "container:YLProject.xcodeproj">
             </BuildableReference>
@@ -27,6 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "13B6A9F82261C8E7004B76D7"
+            BuildableName = "&#x5c0f;&#x9879;&#x76ee;.app"
+            BlueprintName = "YLProject"
+            ReferencedContainer = "container:YLProject.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -49,17 +58,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B6A9F82261C8E7004B76D7"
-            BuildableName = "YLProject.app"
-            BlueprintName = "YLProject"
-            ReferencedContainer = "container:YLProject.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Release"
@@ -76,13 +74,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B6A9F82261C8E7004B76D7"
-            BuildableName = "YLProject.app"
+            BuildableName = "&#x5c0f;&#x9879;&#x76ee;.app"
             BlueprintName = "YLProject"
             ReferencedContainer = "container:YLProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -95,7 +91,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B6A9F82261C8E7004B76D7"
-            BuildableName = "YLProject.app"
+            BuildableName = "&#x5c0f;&#x9879;&#x76ee;.app"
             BlueprintName = "YLProject"
             ReferencedContainer = "container:YLProject.xcodeproj">
          </BuildableReference>

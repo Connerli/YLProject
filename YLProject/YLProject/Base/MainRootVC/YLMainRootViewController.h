@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLMainRootViewController : UIViewController
+@interface YLMainRootViewController : UINavigationController
 + (instancetype)sharedInstance;
 @end
 
